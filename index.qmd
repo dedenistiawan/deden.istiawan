@@ -1,0 +1,71 @@
+---
+title: "Deden Istiawan"
+subtitle: |
+  Lecturer + Data Scientist.
+image: /assets/images/profil-1.png
+about:
+  id: edu-exp
+  template: solana
+  image-width: 9em
+  image-shape: round
+  links:
+    - text: "{{< iconify fa6-solid:envelope >}}"
+      href: "mailto:deden.istiawan@itesa.ac.id"
+      aria-label: "envelope logo for email"
+    - text: "{{< iconify fa6-brands:orcid >}}"
+      href: "https://orcid.org/0000-0002-0947-9623"
+      aria-label: "ORCID logo linking to ORCID account"
+    - text: "{{< iconify fa6-brands:mastodon >}}"
+      href: "https://fosstodon.org/"
+      aria-label: "Mastodon logo linking to Deden Istiawan account"
+      rel: me
+    - text: "{{< iconify fa6-brands:bluesky >}}"
+      href: "https://bsky.app/"
+      aria-label: "BlueSky logo linking to Deden Istiawan account"
+    - text: "{{< iconify fa6-brands:x-twitter >}}"
+      href: "https://x.com/dedenistiawan"
+      aria-label: "X (Twitter) logo linking to Deden Istiawan account"
+    - text: "{{< iconify fa6-brands:linkedin >}}"
+      href: "https://www.linkedin.com/in/deden-istiawan-149806255/"
+      aria-label: "LinkedIn logo linking to mickaelcanouil account"
+    - text: "{{< iconify octicon:mark-github-16 >}}"
+      href: "https://github.com/dedenistiawan"
+      aria-label: "GitHub logo linking to Deden Istiawan account"
+    - text: "{{< iconify octicon:heart-fill-16 >}} Sponsor"
+      href: "https://github.com/sponsors/mcanouil?o=esb"
+      aria-label: "GitHub Deden Istiawan"
+---
+
+::: {#edu-exp}
+:::
+
+Currently, I work as a lecturer and data scientist. As an educator, I have a passion for sharing knowledge and inspiring students in understanding the world of data and technology. On the other hand, as a data analyst, I am actively involved in various data analysis projects that aim to transform raw data into valuable insights that can be implemented in strategic decision making. I also enjoy watching movies. Have a look at my complete [_{{< iconify fa6-regular file-lines >}} curriculum vitae_](https://m.canouil.dev/curriculum-vitae/).
+
+![](https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg){fig-alt="Github Commit History"}
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-8 style="text-align: left;"}
+## Education
+
+- **_M.Kom._ in Informatics Engineering**, **2017**  
+  *Universitas Dian Nuswantoro*
+
+- **_S.Si._ in Statistics**, **2013**  
+  *Institut Sains dan Teknologi AKPRIND*
+:::
+
+::: {.g-col-12 .g-col-md-4 style="text-align: left;"}
+## Interests
+
+- Watching Movies
+- R markdown
+- Bookdown
+- Quarto
+- Data Analysis
+- Data Visualisation
+- Knowledge Sharing
+- Learning New Skills
+:::
+
+::::
