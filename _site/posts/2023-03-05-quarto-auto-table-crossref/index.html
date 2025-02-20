@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.13">
+<meta name="generator" content="quarto-1.6.40">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Mickaël CANOUIL, Ph.D.">
 <meta name="description" content="A small example of how to automatically have labels and captions for an unknown number of tables in Quarto, using knitr and R.">
-<title>Quarto Q&amp;A: How to have labels and captions for an unknown number of tables? – MCU</title>
+<title>Quarto Q&amp;A: How to have labels and captions for an unknown number of tables? – DI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -62,17 +62,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../..//assets/images/logo.svg" rel="icon" type="image/svg+xml">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<link href="../..//assets/images/icon2.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-ef4e90ae6c3d09b51a45eb7507f66832.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-f8dc6eab18fde03278982b0b35885446.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-a3672881ac7ad8ea384edd0f41515e31.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-032a9e69169bdaa0800d875de9ccd853.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script src="../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
@@ -103,18 +102,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<meta property="og:title" content="Quarto Q&amp;A: How to have labels and captions for an unknown number of tables? – MCU">
+<meta property="og:title" content="Quarto Q&amp;A: How to have labels and captions for an unknown number of tables? – DI">
 <meta property="og:description" content="A small example of how to automatically have labels and captions for an unknown number of tables in Quarto, using knitr and R.">
-<meta property="og:image" content="https://mickael.canouil.fr/posts/2023-03-05-quarto-auto-table-crossref/featured.png">
-<meta property="og:site_name" content="MCU">
+<meta property="og:image" content="https://moonlit-griffin-ab2e0f.netlify.app/posts/2023-03-05-quarto-auto-table-crossref/featured.png">
+<meta property="og:site_name" content="DI">
 <meta property="og:image:height" content="1512">
 <meta property="og:image:width" content="2688">
 <meta property="og:image:alt" content="Screenshot of an html rendered by Quarto. it starts with a sentence saying below are several tables by species of penguins, followed by an item list showing the species and their respective cross-reference to the tables.
 Tables are simply on top of each other after the item list.
 ">
-<meta name="twitter:title" content="Quarto Q&amp;A: How to have labels and captions for an unknown number of tables? – MCU">
+<meta name="twitter:title" content="Quarto Q&amp;A: How to have labels and captions for an unknown number of tables? – DI">
 <meta name="twitter:description" content="A small example of how to automatically have labels and captions for an unknown number of tables in Quarto, using knitr and R.">
-<meta name="twitter:image" content="https://mickael.canouil.fr/posts/2023-03-05-quarto-auto-table-crossref/featured.png">
+<meta name="twitter:image" content="https://moonlit-griffin-ab2e0f.netlify.app/posts/2023-03-05-quarto-auto-table-crossref/featured.png">
 <meta name="twitter:image-height" content="1512">
 <meta name="twitter:image-width" content="2688">
 <meta name="twitter:image:alt" content="Screenshot of an html rendered by Quarto. it starts with a sentence saying below are several tables by species of penguins, followed by an item list showing the species and their respective cross-reference to the tables.
@@ -128,9 +127,9 @@ Tables are simply on top of each other after the item list.
   <header id="quarto-header" class="headroom fixed-top quarto-banner"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../assets/images/logo.svg" alt="" class="navbar-logo"></a>
+    <img src="../../assets/images/icon2.png" alt="" class="navbar-logo"></a>
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">MCU</span>
+    <span class="navbar-title">DI</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -160,27 +159,27 @@ Tables are simply on top of each other after the item list.
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://fosstodon.org/@MickaelCanouil" rel="me"> 
+    <a class="nav-link" href="https://fosstodon.org/" rel="me"> 
 <span class="menu-text"><iconify-icon inline="true" role="img" icon="fa6-brands:mastodon" aria-label="Icon mastodon from fa6-brands Iconify.design set." title="Icon mastodon from fa6-brands Iconify.design set."></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://bsky.app/profile/mickael.canouil.fr"> 
+    <a class="nav-link" href="https://bsky.app/"> 
 <span class="menu-text"><iconify-icon inline="true" role="img" icon="fa6-brands:bluesky" aria-label="Icon bluesky from fa6-brands Iconify.design set." title="Icon bluesky from fa6-brands Iconify.design set."></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://x.com/MickaelCanouil"> 
+    <a class="nav-link" href="https://x.com/dedenistiawan"> 
 <span class="menu-text"><iconify-icon inline="true" role="img" icon="fa6-brands:x-twitter" aria-label="Icon x-twitter from fa6-brands Iconify.design set." title="Icon x-twitter from fa6-brands Iconify.design set."></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://www.linkedin.com/in/mickaelcanouil"> 
+    <a class="nav-link" href="https://www.linkedin.com/in/deden-istiawan-149806255/"> 
 <span class="menu-text"><iconify-icon inline="true" role="img" icon="fa6-brands:linkedin" aria-label="Icon linkedin from fa6-brands Iconify.design set." title="Icon linkedin from fa6-brands Iconify.design set."></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/mcanouil"> 
+    <a class="nav-link" href="https://github.com/dedenistiawan"> 
 <span class="menu-text"><iconify-icon inline="true" role="img" icon="octicon:mark-github-16" aria-label="Icon mark-github-16 from octicon Iconify.design set." title="Icon mark-github-16 from octicon Iconify.design set."></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/sponsors/mcanouil?o=esb"> 
+    <a class="nav-link" href="https://github.com/dedenistiawan"> 
 <span class="menu-text"><iconify-icon inline="true" role="img" icon="octicon:heart-fill-16" aria-label="Icon heart-fill-16 from octicon Iconify.design set." title="Icon heart-fill-16 from octicon Iconify.design set."></iconify-icon></span></a>
   </li>  
 </ul>
@@ -237,7 +236,7 @@ Tables are simply on top of each other after the item list.
   <li><a href="#the-answersolution" id="toc-the-answersolution" class="nav-link" data-scroll-target="#the-answersolution"><span class="header-section-number">2</span> The Answer/Solution</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">3</span> References</a></li>
   <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples"><span class="header-section-number">4</span> Examples</a></li>
-  </ul><div class="toc-actions"><ul><li><a href="https://github.com/mcanouil/mickael.canouil.fr/edit/main/posts/2023-03-05-quarto-auto-table-crossref/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mcanouil/mickael.canouil.fr/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+  </ul><div class="toc-actions"><ul><li><a href="https://github.com/dedenistiawan/edit/main/posts/2023-03-05-quarto-auto-table-crossref/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dedenistiawan/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content"><p>I decided to start small blog posts with answers/solutions to questions I have seen and answered on <a href="https://twitter.com/">Twitter</a>, <a href="https://joinmastodon.org/">Mastodon</a>, and <a href="https://quarto.org/">Quarto</a> GitHub <a href="https://github.com/quarto-dev/quarto-cli/issues">Issues</a> &amp; <a href="https://github.com/quarto-dev/quarto-cli/discussions">Discussions</a>.</p>
@@ -267,45 +266,45 @@ Tables are simply on top of each other after the item list.
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#| include: false</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (ipkg <span class="cf">in</span> <span class="fu">c</span>(<span class="st">"palmerpenguins"</span>, <span class="st">"gt"</span>, <span class="st">"dplyr"</span>)) {</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(ipkg, <span class="at">character.only =</span> <span class="cn">TRUE</span>)) {</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">install.packages</span>(ipkg)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(ipkg, <span class="at">character.only =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="in">#| include: false</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="in">for (ipkg in c("palmerpenguins", "gt", "dplyr")) {</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="in">  if (!require(ipkg, character.only = TRUE)) {</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="in">    install.packages(ipkg)</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="in">    library(ipkg, character.only = TRUE)</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="in">  }</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>Below are tables of the first six rows of the Palmer penguins dataset by species:</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">#| output: asis</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sprintf</span>(</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">"- `%s` (@tbl-%s)"</span>,</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">levels</span>(penguins[[<span class="st">"species"</span>]]),</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">levels</span>(penguins[[<span class="st">"species"</span>]])</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  ),</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  <span class="at">sep =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="in">#| echo: false</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="in">#| output: asis</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="in">cat(</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="in">  sprintf(</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="in">    "- `%s` (@tbl-%s)",</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="in">    levels(penguins[["species"]]),</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="in">    levels(penguins[["species"]])</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="in">  ),</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="in">  sep = "\n"</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (ispecies <span class="cf">in</span> <span class="fu">levels</span>(penguins[[<span class="st">"species"</span>]])) {</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  tab <span class="ot">&lt;-</span> penguins <span class="sc">|&gt;</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(species <span class="sc">%in%</span> ispecies) <span class="sc">|&gt;</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>species) <span class="sc">|&gt;</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    <span class="fu">head</span>() <span class="sc">|&gt;</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tab_header</span>(<span class="at">title =</span> ispecies)</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="at">sep =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>, knitr<span class="sc">::</span><span class="fu">knit_child</span>(<span class="at">quiet =</span> <span class="cn">TRUE</span>, <span class="at">text =</span> <span class="fu">c</span>(</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    <span class="st">"```{r}"</span>,</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    <span class="st">"#| echo: false"</span>,</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sprintf</span>(<span class="st">"#| tbl-cap: %s"</span>, ispecies),</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sprintf</span>(<span class="st">"#| label: tbl-%s"</span>, ispecies),</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    <span class="st">"tab"</span>,</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    <span class="st">"```"</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>  )))</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="in">for (ispecies in levels(penguins[["species"]])) {</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="in">  tab &lt;- penguins |&gt;</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="in">    filter(species %in% ispecies) |&gt;</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="in">    select(-species) |&gt;</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="in">    head() |&gt;</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="in">    gt() |&gt;</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="in">    tab_header(title = ispecies)</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="in">  cat(sep = "\n", knitr::knit_child(quiet = TRUE, text = c(</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="in">    "```{r}",</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="in">    "#| echo: false",</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="in">    sprintf("#| tbl-cap: %s", ispecies),</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="in">    sprintf("#| label: tbl-%s", ispecies),</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="in">    "tab",</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="in">    "```"</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="in">  )))</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
 <span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
@@ -468,7 +467,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/mickael\.canouil\.fr");
+      var filterRegex = new RegExp("https:\/\/moonlit-griffin-ab2e0f\.netlify\.app");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -799,61 +798,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script><input type="hidden" id="giscus-base-theme" value="dark_dimmed"><input type="hidden" id="giscus-alt-theme" value="dark_dimmed"><script>
-function loadGiscusWhenReady() {
-  // Function to get the theme based on body class
-  const getTheme = () => {
-    const baseTheme = document.getElementById('giscus-base-theme').value;
-    const altTheme = document.getElementById('giscus-alt-theme').value;
-    return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
-  };
-  // Create the Giscus script and add it to the desired location
-  const loadGiscus = () => {
-    const script = document.createElement("script");
-    script.src = "https://giscus.app/client.js";
-    script.async = true;
-    script.dataset.repo = "mcanouil/mickael.canouil.fr";
-    script.dataset.repoId = "MDEwOlJlcG9zaXRvcnkzNDcwODgwMDM=";
-    script.dataset.category = "Blog posts";
-    script.dataset.categoryId = "DIC_kwDOFLAkg84CSh-t";
-    script.dataset.mapping = "title";
-    script.dataset.reactionsEnabled = "1";
-    script.dataset.emitMetadata = "0";
-    script.dataset.inputPosition = "top";
-    script.dataset.theme = getTheme();
-    script.dataset.lang = "en";
-    script.crossOrigin = "anonymous";
-    // Append the script to the desired div instead of at the end of the body
-    document.getElementById("quarto-content").appendChild(script);
-  };
-  // MutationObserver to detect when the 'quarto-light' or 'quarto-dark' class is added to the body
-  const observer = new MutationObserver((mutations) => {
-    for (const mutation of mutations) {
-      if (mutation.type === "attributes" && mutation.attributeName === "class") {
-        if (document.body.classList.contains('quarto-light') || document.body.classList.contains('quarto-dark')) {
-          loadGiscus();
-          observer.disconnect(); // Stop observing once Giscus is loaded
-          break;
-        }
-      }
-    }
-  });
-  // Start observing the body for class attribute changes
-  observer.observe(document.body, {
-    attributes: true,
-    attributeFilter: ["class"],
-  });
-}
-loadGiscusWhenReady();
-</script>
+</script><script src="https://giscus.app/client.js" data-repo="mcanouil/mickael.canouil.fr" data-repo-id="MDEwOlJlcG9zaXRvcnkzNDcwODgwMDM=" data-category="Blog posts" data-category-id="DIC_kwDOFLAkg84CSh-t" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="dark_dimmed" data-lang="en" crossorigin="anonymous" async="">
+</script><input type="hidden" id="giscus-base-theme" value="dark_dimmed"><input type="hidden" id="giscus-alt-theme" value="dark_dimmed">
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>Powered by <a href="https://quarto.org"><iconify-icon inline="true" role="img" icon="simple-icons:quarto" aria-label="Icon quarto from simple-icons Iconify.design set." title="Icon quarto from simple-icons Iconify.design set."></iconify-icon> Quarto</a>.</p>
 </div>   
     <div class="nav-footer-center">
-<p>© <span id="current-year"></span> Mickaël CANOUIL. <a href="https://github.com/sponsors/mcanouil?o=esb"><iconify-icon inline="true" role="img" icon="octicon:heart-fill-16" aria-label="Icon heart-fill-16 from octicon Iconify.design set." title="Icon heart-fill-16 from octicon Iconify.design set."></iconify-icon> Sponsor</a>.</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/mcanouil/mickael.canouil.fr/edit/main/posts/2023-03-05-quarto-auto-table-crossref/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mcanouil/mickael.canouil.fr/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<p>© <span id="current-year"></span> Deden Istiawan. <a href="https://github.com/dedenistiawan"><iconify-icon inline="true" role="img" icon="octicon:heart-fill-16" aria-label="Icon heart-fill-16 from octicon Iconify.design set." title="Icon heart-fill-16 from octicon Iconify.design set."></iconify-icon> Sponsor</a>.</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/dedenistiawan/edit/main/posts/2023-03-05-quarto-auto-table-crossref/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dedenistiawan/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>License: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY NC SA 4.0</a>.</p>
 </div>

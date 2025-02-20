@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 3812217f-7213-4d03-9db2-550797065635
+      url: https://dedenistiawan.netlify.app

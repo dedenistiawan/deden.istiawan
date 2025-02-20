@@ -1,9 +1,5 @@
 [
   {
-    "listing": "/projects.html",
-    "items": []
-  },
-  {
     "listing": "/talks.html",
     "items": [
       "/talks/2021-04-15-rlille-reproducibility/index.html",
@@ -14,6 +10,10 @@
       "/talks/2017-09-29-phd/index.html",
       "/talks/2016-02-11-smpgd/index.html"
     ]
+  },
+  {
+    "listing": "/publications.html",
+    "items": []
   },
   {
     "listing": "/blog.html",
@@ -28,7 +28,7 @@
     ]
   },
   {
-    "listing": "/publications.html",
+    "listing": "/projects.html",
     "items": []
   }
 ]
