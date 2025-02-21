@@ -1,4 +1,4 @@
-create_pub_listing <- function(bib_file, author = "istiawan") {
+create_pub_listing <- function(bib_file, author = "Istiawan") {
   bib <- strsplit(paste(readLines(bib_file), collapse = "\n"), "\n@")[[1]]
   articles <- lapply(
     X = paste0("@", bib[bib != ""]),

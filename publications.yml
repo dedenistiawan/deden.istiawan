@@ -1,975 +1,829 @@
-- abstract: AbstractType 2 diabetes (T2D) is a heterogeneous disease
-    that develops through diverse pathophysiological processes 1,2 and
-    molecular mechanisms that are often specific to cell type 3,4 .
-    Here, to characterize the genetic contribution to these processes
-    across ancestry groups, we aggregate genome-wide association study
-    data from 2,535,601 individuals (39.7% not of European ancestry),
-    including 428,452 cases of T2D. We identify 1,289 independent
-    association signals at genome-wide significance ( P  \<\< 5 × 10 −8
-    ) that map to 611 loci, of which 145 loci are, to our knowledge,
-    previously unreported. We define eight non-overlapping clusters of
-    T2D signals that are characterized by distinct profiles of
-    cardiometabolic trait associations. These clusters are
-    differentially enriched for cell-type-specific regions of open
-    chromatin, including pancreatic islets, adipocytes, endothelial
-    cells and enteroendocrine cells. We build cluster-specific
-    partitioned polygenic scores 5 in a further 279,552 individuals of
-    diverse ancestry, including 30,288 cases of T2D, and test their
-    association with T2D-related vascular outcomes. Cluster-specific
-    partitioned polygenic scores are associated with coronary artery
-    disease, peripheral artery disease and end-stage diabetic
-    nephropathy across ancestry groups, highlighting the importance of
-    obesity-related processes in the development of vascular outcomes.
-    Our findings show the value of integrating multi-ancestry
-    genome-wide association study data with single-cell epigenomics to
-    disentangle the aetiological heterogeneity that drives the
-    development and progression of T2D. This might offer a route to
-    optimize global access to genetically informed diabetes care.
-  accessed: 2024-08-11
-  author:
-  - family: Suzuki
-    given: Ken
-  - family: Hatzikotoulas
-    given: Konstantinos
-  - family: Southam
-    given: Lorraine
-  - family: Taylor
-    given: Henry J.
-  - family: Yin
-    given: Xianyong
-  - family: Lorenz
-    given: Kim M.
-  - family: Mandla
-    given: Ravi
-  - family: Huerta-Chagoya
-    given: Alicia
-  - family: Melloni
-    given: Giorgio E. M.
-  - family: Kanoni
-    given: Stavroula
-  - family: Rayner
-    given: Nigel W.
-  - family: Bocher
-    given: Ozvan
-  - family: Arruda
-    given: Ana Luiza
-  - family: Sonehara
-    given: Kyuto
-  - family: Namba
-    given: Shinichi
-  - family: Lee
-    given: Simon S. K.
-  - family: Preuss
-    given: Michael H.
-  - family: Petty
-    given: Lauren E.
-  - family: Schroeder
-    given: Philip
-  - family: Vanderwerff
-    given: Brett
-  - family: Kals
-    given: Mart
-  - family: Bragg
-    given: Fiona
-  - family: Lin
-    given: Kuang
-  - family: Guo
-    given: Xiuqing
-  - family: Zhang
-    given: Weihua
-  - family: Yao
-    given: Jie
-  - family: Kim
-    given: Young Jin
-  - family: Graff
-    given: Mariaelisa
-  - family: Takeuchi
-    given: Fumihiko
-  - family: Nano
-    given: Jana
-  - family: Lamri
-    given: Amel
-  - family: Nakatochi
-    given: Masahiro
-  - family: Moon
-    given: Sanghoon
-  - family: Scott
-    given: Robert A.
-  - family: Cook
-    given: James P.
-  - family: Lee
-    given: Jung-Jin
-  - family: Pan
-    given: Ian
-  - family: Taliun
-    given: Daniel
-  - family: Parra
-    given: Esteban J.
-  - family: Chai
-    given: Jin-Fang
-  - family: Bielak
-    given: Lawrence F.
-  - family: Tabara
-    given: Yasuharu
-  - family: Hai
-    given: Yang
-  - family: Thorleifsson
-    given: Gudmar
-  - family: Grarup
-    given: Niels
-  - family: Sofer
-    given: Tamar
-  - family: Wuttke
-    given: Matthias
-  - family: Sarnowski
-    given: Chloé
-  - family: Gieger
-    given: Christian
-  - family: Nousome
-    given: Darryl
-  - family: Trompet
-    given: Stella
-  - family: Kwak
-    given: Soo-Heon
-  - family: Long
-    given: Jirong
-  - family: Sun
-    given: Meng
-  - family: Tong
-    given: Lin
-  - family: Chen
-    given: Wei-Min
-  - family: Nongmaithem
-    given: Suraj S.
-  - family: Noordam
-    given: Raymond
-  - family: Lim
-    given: Victor J. Y.
-  - family: Tam
-    given: Claudia H. T.
-  - family: Joo
-    given: Yoonjung Yoonie
-  - family: Chen
-    given: Chien-Hsiun
-  - family: Raffield
-    given: Laura M.
-  - family: Prins
-    given: Bram Peter
-  - family: Nicolas
-    given: Aude
-  - family: Yanek
-    given: Lisa R.
-  - family: Chen
-    given: Guanjie
-  - family: Brody
-    given: Jennifer A.
-  - family: Kabagambe
-    given: Edmond
-  - family: An
-    given: Ping
-  - family: Xiang
-    given: Anny H.
-  - family: Choi
-    given: Hyeok Sun
-  - family: Cade
-    given: Brian E.
-  - family: Tan
-    given: Jingyi
-  - family: Broadaway
-    given: K. Alaine
-  - family: Williamson
-    given: Alice
-  - family: Kamali
-    given: Zoha
-  - family: Cui
-    given: Jinrui
-  - family: Thangam
-    given: Manonanthini
-  - family: Adair
-    given: Linda S.
-  - family: Adeyemo
-    given: Adebowale
-  - family: Aguilar-Salinas
-    given: Carlos A.
-  - family: Ahluwalia
-    given: Tarunveer S.
-  - family: Anand
-    given: Sonia S.
-  - family: Bertoni
-    given: Alain
-  - family: Bork-Jensen
-    given: Jette
-  - family: Brandslund
-    given: Ivan
-  - family: Buchanan
-    given: Thomas A.
-  - family: Burant
-    given: Charles F.
-  - family: Butterworth
-    given: Adam S.
-  - family: Canouil
-    given: Mickaël
-  - family: Chan
-    given: Juliana C. N.
-  - family: Chang
-    given: Li-Ching
-  - family: Chee
-    given: Miao-Li
-  - family: Chen
-    given: Ji
-  - family: Chen
-    given: Shyh-Huei
-  - family: Chen
-    given: Yuan-Tsong
-  - family: Chen
-    given: Zhengming
-  - family: Chuang
-    given: Lee-Ming
-  - family: Cushman
-    given: Mary
-  - family: Danesh
-    given: John
-  - family: Das
-    given: Swapan K.
-  - family: De Silva
-    given: H. Janaka
-  - family: Dedoussis
-    given: George
-  - family: Dimitrov
-    given: Latchezar
-  - family: Doumatey
-    given: Ayo P.
-  - family: Du
-    given: Shufa
-  - family: Duan
-    given: Qing
-  - family: Eckardt
-    given: Kai-Uwe
-  - family: Emery
-    given: Leslie S.
-  - family: Evans
-    given: Daniel S.
-  - family: Evans
-    given: Michele K.
-  - family: Fischer
-    given: Krista
-  - family: Floyd
-    given: James S.
-  - family: Ford
-    given: Ian
-  - family: Franco
-    given: Oscar H.
-  - family: Frayling
-    given: Timothy M.
-  - family: Freedman
-    given: Barry I.
-  - family: Genter
-    given: Pauline
-  - family: Gerstein
-    given: Hertzel C.
-  - family: Giedraitis
-    given: Vilmantas
-  - family: González-Villalpando
-    given: Clicerio
-  - family: González-Villalpando
-    given: Maria Elena
-  - family: Gordon-Larsen
-    given: Penny
-  - family: Gross
-    given: Myron
-  - family: Guare
-    given: Lindsay A.
-  - family: Hackinger
-    given: Sophie
-  - family: Hakaste
-    given: Liisa
-  - family: Han
-    given: Sohee
-  - family: Hattersley
-    given: Andrew T.
-  - family: Herder
-    given: Christian
-  - family: Horikoshi
-    given: Momoko
-  - family: Howard
-    given: Annie-Green
-  - family: Hsueh
-    given: Willa
-  - family: Huang
-    given: Mengna
-  - family: Huang
-    given: Wei
-  - family: Hung
-    given: Yi-Jen
-  - family: Hwang
-    given: Mi Yeong
-  - family: Hwu
-    given: Chii-Min
-  - family: Ichihara
-    given: Sahoko
-  - family: Ikram
-    given: Mohammad Arfan
-  - family: Ingelsson
-    given: Martin
-  - family: Islam
-    given: Md. Tariqul
-  - family: Isono
-    given: Masato
-  - family: Jang
-    given: Hye-Mi
-  - family: Jasmine
-    given: Farzana
-  - family: Jiang
-    given: Guozhi
-  - family: Jonas
-    given: Jost B.
-  - family: Jørgensen
-    given: Torben
-  - family: Kamanu
-    given: Frederick K.
-  - family: Kandeel
-    given: Fouad R.
-  - family: Kasturiratne
-    given: Anuradhani
-  - family: Katsuya
-    given: Tomohiro
-  - family: Kaur
-    given: Varinderpal
-  - family: Kawaguchi
-    given: Takahisa
-  - family: Keaton
-    given: Jacob M.
-  - family: Kho
-    given: Abel N.
-  - family: Khor
-    given: Chiea-Chuen
-  - family: Kibriya
-    given: Muhammad G.
-  - family: Kim
-    given: Duk-Hwan
-  - family: Kronenberg
-    given: Florian
-  - family: Kuusisto
-    given: Johanna
-  - family: Läll
-    given: Kristi
-  - family: Lange
-    given: Leslie A.
-  - family: Lee
-    given: Kyung Min
-  - family: Lee
-    given: Myung-Shik
-  - family: Lee
-    given: Nanette R.
-  - family: Leong
-    given: Aaron
-  - family: Li
-    given: Liming
-  - family: Li
-    given: Yun
-  - family: Li-Gao
-    given: Ruifang
-  - family: Ligthart
-    given: Symen
-  - family: Lindgren
-    given: Cecilia M.
-  - family: Linneberg
-    given: Allan
-  - family: Liu
-    given: Ching-Ti
-  - family: Liu
-    given: Jianjun
-  - family: Locke
-    given: Adam E.
-  - family: Louie
-    given: Tin
-  - family: Luan
-    given: Jian'an
-  - family: Luk
-    given: Andrea O.
-  - family: Luo
-    given: Xi
-  - family: Lv
-    given: Jun
-  - family: Lynch
-    given: Julie A.
-  - family: Lyssenko
-    given: Valeriya
-  - family: Maeda
-    given: Shiro
-  - family: Mamakou
-    given: Vasiliki
-  - family: Mansuri
-    given: Sohail Rafik
-  - family: Matsuda
-    given: Koichi
-  - family: Meitinger
-    given: Thomas
-  - family: Melander
-    given: Olle
-  - family: Metspalu
-    given: Andres
-  - family: Mo
-    given: Huan
-  - family: Morris
-    given: Andrew D.
-  - family: Moura
-    given: Filipe A.
-  - family: Nadler
-    given: Jerry L.
-  - family: Nalls
-    given: Michael A.
-  - family: Nayak
-    given: Uma
-  - family: Ntalla
-    given: Ioanna
-  - family: Okada
-    given: Yukinori
-  - family: Orozco
-    given: Lorena
-  - family: Patel
-    given: Sanjay R.
-  - family: Patil
-    given: Snehal
-  - family: Pei
-    given: Pei
-  - family: Pereira
-    given: Mark A.
-  - family: Peters
-    given: Annette
-  - family: Pirie
-    given: Fraser J.
-  - family: Polikowsky
-    given: Hannah G.
-  - family: Porneala
-    given: Bianca
-  - family: Prasad
-    given: Gauri
-  - family: Rasmussen-Torvik
-    given: Laura J.
-  - family: Reiner
-    given: Alexander P.
-  - family: Roden
-    given: Michael
-  - family: Rohde
-    given: Rebecca
-  - family: Roll
-    given: Katheryn
-  - family: Sabanayagam
-    given: Charumathi
-  - family: Sandow
-    given: Kevin
-  - family: Sankareswaran
-    given: Alagu
-  - family: Sattar
-    given: Naveed
-  - family: Schönherr
-    given: Sebastian
-  - family: Shahriar
-    given: Mohammad
-  - family: Shen
-    given: Botong
-  - family: Shi
-    given: Jinxiu
-  - family: Shin
-    given: Dong Mun
-  - family: Shojima
-    given: Nobuhiro
-  - family: Smith
-    given: Jennifer A.
-  - family: So
-    given: Wing Yee
-  - family: Stančáková
-    given: Alena
-  - family: Steinthorsdottir
-    given: Valgerdur
-  - family: Stilp
-    given: Adrienne M.
-  - family: Strauch
-    given: Konstantin
-  - family: Taylor
-    given: Kent D.
-  - family: Thorand
-    given: Barbara
-  - family: Thorsteinsdottir
-    given: Unnur
-  - family: Tomlinson
-    given: Brian
-  - family: Tran
-    given: Tam C.
-  - family: Tsai
-    given: Fuu-Jen
-  - family: Tuomilehto
-    given: Jaakko
-  - family: Tusie-Luna
-    given: Teresa
-  - family: Udler
-    given: Miriam S.
-  - family: Valladares-Salgado
-    given: Adan
-  - family: Van Dam
-    given: Rob M.
-  - family: Van Klinken
-    given: Jan B.
-  - family: Varma
-    given: Rohit
-  - family: Wacher-Rodarte
-    given: Niels
-  - family: Wheeler
-    given: Eleanor
-  - family: Wickremasinghe
-    given: Ananda R.
-  - family: Van Dijk
-    given: Ko Willems
-  - family: Witte
-    given: Daniel R.
-  - family: Yajnik
-    given: Chittaranjan S.
-  - family: Yamamoto
-    given: Ken
-  - family: Yamamoto
-    given: Kenichi
-  - family: Yoon
-    given: Kyungheon
-  - family: Yu
-    given: Canqing
-  - family: Yuan
-    given: Jian-Min
-  - family: Yusuf
-    given: Salim
-  - family: Zawistowski
-    given: Matthew
-  - family: Zhang
-    given: Liang
-  - family: Zheng
-    given: Wei
-  - literal: VA Million Veteran Program
-  - literal: AMED GRIFIN Diabetes Initiative Japan
-  - literal: Biobank Japan Project
-  - literal: Penn Medicine BioBank
-  - literal: Regeneron Genetics Center
-  - literal: Genes & Health Research Team
-  - family: Kanona
-    given: Stavroula
-  - family: Van Heel
-    given: David A.
-  - literal: eMERGE Consortium
-  - literal: International Consortium of Blood Pressure (ICBP)
-  - literal: Meta-Analyses of Glucose and Insulin-Related Traits
-      Consortium (MAGIC)
-  - family: Raffel
-    given: Leslie J.
-  - family: Igase
-    given: Michiya
-  - family: Ipp
-    given: Eli
-  - family: Redline
-    given: Susan
-  - family: Cho
-    given: Yoon Shin
-  - family: Lind
-    given: Lars
-  - family: Province
-    given: Michael A.
-  - family: Fornage
-    given: Myriam
-  - family: Hanis
-    given: Craig L.
-  - family: Ingelsson
-    given: Erik
-  - family: Zonderman
-    given: Alan B.
-  - family: Psaty
-    given: Bruce M.
-  - family: Wang
-    given: Ya-Xing
-  - family: Rotimi
-    given: Charles N.
-  - family: Becker
-    given: Diane M.
-  - family: Matsuda
-    given: Fumihiko
-  - family: Liu
-    given: Yongmei
-  - family: Yokota
-    given: Mitsuhiro
-  - family: Kardia
-    given: Sharon L. R.
-  - family: Peyser
-    given: Patricia A.
-  - family: Pankow
-    given: James S.
-  - family: Engert
-    given: James C.
-  - family: Bonnefond
-    given: Amélie
-  - family: Froguel
-    given: Philippe
-  - family: Wilson
-    given: James G.
-  - family: Sheu
-    given: Wayne H. H.
-  - family: Wu
-    given: Jer-Yuarn
-  - family: Hayes
-    given: M. Geoffrey
-  - family: Ma
-    given: Ronald C. W.
-  - family: Wong
-    given: Tien-Yin
-  - family: Mook-Kanamori
-    given: Dennis O.
-  - family: Tuomi
-    given: Tiinamaija
-  - family: Chandak
-    given: Giriraj R.
-  - family: Collins
-    given: Francis S.
-  - family: Bharadwaj
-    given: Dwaipayan
-  - family: Paré
-    given: Guillaume
-  - family: Sale
-    given: Michèle M.
-  - family: Ahsan
-    given: Habibul
-  - family: Motala
-    given: Ayesha A.
-  - family: Shu
-    given: Xiao-Ou
-  - family: Park
-    given: Kyong-Soo
-  - family: Jukema
-    given: J. Wouter
-  - family: Cruz
-    given: Miguel
-  - family: Chen
-    given: Yii-Der Ida
-  - family: Rich
-    given: Stephen S.
-  - family: McKean-Cowdin
-    given: Roberta
-  - family: Grallert
-    given: Harald
-  - family: Cheng
-    given: Ching-Yu
-  - family: Ghanbari
-    given: Mohsen
-  - family: Tai
-    given: E-Shyong
-  - family: Dupuis
-    given: Josee
-  - family: Kato
-    given: Norihiro
-  - family: Laakso
-    given: Markku
-  - family: Köttgen
-    given: Anna
-  - family: Koh
-    given: Woon-Puay
-  - family: Bowden
-    given: Donald W.
-  - family: Palmer
-    given: Colin N. A.
-  - family: Kooner
-    given: Jaspal S.
-  - family: Kooperberg
-    given: Charles
-  - family: Liu
-    given: Simin
-  - family: North
-    given: Kari E.
-  - family: Saleheen
-    given: Danish
-  - family: Hansen
-    given: Torben
-  - family: Pedersen
-    given: Oluf
-  - family: Wareham
-    given: Nicholas J.
-  - family: Lee
-    given: Juyoung
-  - family: Kim
-    given: Bong-Jo
-  - family: Millwood
-    given: Iona Y.
-  - family: Walters
-    given: Robin G.
-  - family: Stefansson
-    given: Kari
-  - family: Ahlqvist
-    given: Emma
-  - family: Goodarzi
-    given: Mark O.
-  - family: Mohlke
-    given: Karen L.
-  - family: Langenberg
-    given: Claudia
-  - family: Haiman
-    given: Christopher A.
-  - family: Loos
-    given: Ruth J. F.
-  - family: Florez
-    given: Jose C.
-  - family: Rader
-    given: Daniel J.
-  - family: Ritchie
-    given: Marylyn D.
-  - family: Zöllner
-    given: Sebastian
-  - family: Mägi
-    given: Reedik
-  - family: Marston
-    given: Nicholas A.
-  - family: Ruff
-    given: Christian T.
-  - family: Van Heel
-    given: David A.
-  - family: Finer
-    given: Sarah
-  - family: Denny
-    given: Joshua C.
-  - family: Yamauchi
-    given: Toshimasa
-  - family: Kadowaki
-    given: Takashi
-  - family: Chambers
-    given: John C.
-  - family: Ng
-    given: Maggie C. Y.
-  - family: Sim
-    given: Xueling
-  - family: Below
-    given: Jennifer E.
-  - family: Tsao
-    given: Philip S.
-  - family: Chang
-    given: Kyong-Mi
-  - family: McCarthy
-    given: Mark I.
-  - family: Meigs
-    given: James B.
-  - family: Mahajan
-    given: Anubha
-  - family: Spracklen
-    given: Cassandra N.
-  - family: Mercader
-    given: Josep M.
-  - family: Boehnke
-    given: Michael
-  - family: Rotter
-    given: Jerome I.
-  - family: Vujkovic
-    given: Marijana
-  - family: Voight
-    given: Benjamin F.
-  - family: Morris
-    given: Andrew P.
-  - family: Zeggini
-    given: Eleftheria
-  container-title: Nature
-  doi: 10.1038/s41586-024-07019-6
-  id: suzuki_genetic_2024
-  issn: 0028-0836, 1476-4687
-  issue: 8003
-  issued: 2024-03
-  page: 347-357
-  title: Genetic drivers of heterogeneity in type 2 diabetes
-    pathophysiology
-  type: article-journal
-  url: "https://www.nature.com/articles/s41586-024-07019-6"
-  volume: 627
-  journal-title: '*Nature*'
-  date: 2024-03
-  path: https://doi.org/10.1038/s41586-024-07019-6
-  first: '&emsp;&emsp;&emsp;'
-- abstract: We postulated that T2D predisposes to exocrine pancreatic
-    diseases through (epi)genetic mechanisms. We explored the methylome
-    (methylationEPIC arrays) of the exocrine pancreas of 141 donors,
-    assessing the impact of T2D. Epigenome-wide association study (EWAS)
-    for T2D identified a hypermethylation in an enhancer of the
-    Pancreatic-Lipase-Related-Protein 1 (PNLIPRP1) gene, associated with
-    decreased PNLIPRP1 expression. PNLIPRP1 null variants (in 191K
-    participants of the UKbiobank) associated with elevated glycemia and
-    LDL-cholesterol. Mendelian Randomisation using 2.5M SNP OmniArrays
-    in 111 donors evidenced that T2D was causal of PNLIPRP1
-    hypermethylation, which was causal for LDL-cholesterol. Further
-    AR42J rat exocrine cell studies demonstrated that Pnliprp1 knockdown
-    induced acinar-to-ductal metaplasia, a known pre-pancreatic cancer
-    state, and increased cholesterol levels, reversible with statin.
-    This (epi)genetic study suggests a role for PNLIPRP1 in human
-    metabolism and on exocrine pancreas function with potential
-    implications for pancreatic diseases.
-  accessed: 2024-09-13
-  author:
-  - family: Maurin
-    given: Lucas
-  - family: Marselli
-    given: Lorella
-  - family: Boissel
-    given: Mathilde
-  - family: Ning
-    given: Lijiao
-  - family: Boutry
-    given: Raphael
-  - family: Fernandes
-    given: Justine
-  - family: Suleiman
-    given: Mara
-  - family: De Luca
-    given: Carmela
-  - family: Leloire
-    given: Audrey
-  - family: Pascat
-    given: Vincent
-  - family: Toussaint
-    given: Bénédicte
-  - family: Amanzougarene
-    given: Souhila
-  - family: Derhourhi
-    given: Mehdi
-  - family: Jörns
-    given: Anne
-  - family: Lenzen
-    given: Sigurd
-  - family: Pattou
-    given: François
-  - family: Kerr-Conte
-    given: Julie
-  - family: Canouil
-    given: Mickaël
-  - family: Marchetti
-    given: Piero
-  - family: Bonnefond
-    given: Amélie
-  - family: Froguel
-    given: Philippe
-  - family: Khamis
-    given: Amna
-  container-title: Diabetes
-  doi: 10.2337/db24-0215
-  id: maurin_pnliprp1_2024
-  issn: 0012-1797, 1939-327X
-  issued: 2024-08
-  page: db240215
-  title: "*PNLIPRP1* hypermethylation in exocrine pancreas links type 2
-    diabetes and cholesterol metabolism"
-  type: article-journal
-  url: "https://diabetesjournals.org/diabetes/article/doi/10.2337/db24-0215/157087/PNLIPRP1-hypermethylation-in-exocrine-pancreas"
-  journal-title: '*Diabetes*'
-  date: 2024-08
-  path: https://doi.org/10.2337/db24-0215
-  first: '&emsp;&emsp;&emsp;'
-- abstract: AbstractGenetic effects on changes in human traits over time
-    are understudied and may have important pathophysiological impact.
-    We propose a framework that enables data quality control, implements
-    mixed models to evaluate trajectories of change in traits, and
-    estimates phenotypes to identify age-varying genetic effects in
-    GWAS. Using childhood BMI as an example trait, we included 71,336
-    participants from six cohorts and estimated the slope and area under
-    the BMI curve within four time periods (infancy, early childhood,
-    late childhood and adolescence) for each participant, in addition to
-    the age and BMI at the adiposity peak and the adiposity rebound.
-    GWAS of the 12 estimated phenotypes identified 28 genome-wide
-    significant variants at 13 loci, one of which (in DAOA) has not been
-    previously associated with childhood or adult BMI. Genetic studies
-    of changes in human traits over time could uncover unique biological
-    mechanisms influencing quantitative traits.
-  accessed: 2024-11-28
-  author:
-  - family: Burrows
-    given: Kimberley
-  container-title: Nature Communications
-  doi: 10.1038/s41467-024-53687-3
-  id: burrows_framework_2024
-  issn: 2041-1723
-  issue: 1
-  issued: 2024-11
-  page: 10067
-  title: A framework for conducting GWAS using repeated measures data
-    with an application to childhood BMI
-  type: article-journal
-  url: "https://www.nature.com/articles/s41467-024-53687-3"
-  volume: 15
-  journal-title: '*Nature Communications*'
-  date: 2024-11
-  path: https://doi.org/10.1038/s41467-024-53687-3
-  first: '&emsp;&emsp;&emsp;'
-- abstract: We postulated that T2D predisposes to exocrine pancreatic
-    diseases through (epi)genetic mechanisms. We explored the methylome
-    (methylationEPIC arrays) of the exocrine pancreas of 141 donors,
-    assessing the impact of T2D. Epigenome-wide association study (EWAS)
-    for T2D identified a hypermethylation in an enhancer of the
-    Pancreatic-Lipase-Related-Protein 1 (PNLIPRP1) gene, associated with
-    decreased PNLIPRP1 expression. PNLIPRP1 null variants (in 191K
-    participants of the UKbiobank) associated with elevated glycemia and
-    LDL-cholesterol. Mendelian Randomisation using 2.5M SNP OmniArrays
-    in 111 donors evidenced that T2D was causal of PNLIPRP1
-    hypermethylation, which was causal for LDL-cholesterol. Further
-    AR42J rat exocrine cell studies demonstrated that Pnliprp1 knockdown
-    induced acinar-to-ductal metaplasia, a known pre-pancreatic cancer
-    state, and increased cholesterol levels, reversible with statin.
-    This (epi)genetic study suggests a role for PNLIPRP1 in human
-    metabolism and on exocrine pancreas function with potential
-    implications for pancreatic diseases.
-  accessed: 2024-09-13
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2017-02-18
   annote: first
   author:
-  - family: Canouil
-    given: Mickaël
-  - family: Maurin
-    given: Lucas
-  - family: Marselli
-    given: Lorella
-  - family: Boissel
-    given: Mathilde
-  - family: Ning
-    given: Lijiao
-  - family: Boutry
-    given: Raphael
-  - family: Fernandes
-    given: Justine
-  - family: Suleiman
-    given: Mara
-  - family: De Luca
-    given: Carmela
-  - family: Leloire
-    given: Audrey
-  - family: Pascat
-    given: Vincent
-  - family: Toussaint
-    given: Bénédicte
-  - family: Amanzougarene
-    given: Souhila
-  - family: Derhourhi
-    given: Mehdi
-  - family: Jörns
-    given: Anne
-  - family: Lenzen
-    given: Sigurd
-  - family: Pattou
-    given: François
-  - family: Kerr-Conte
-    given: Julie
-  - family: Marchetti
-    given: Piero
-  - family: Bonnefond
-    given: Amélie
-  - family: Froguel
-    given: Philippe
-  - family: Khamis
-    given: Amna
-  container-title: Diabetes
-  doi: 10.2337/db24-0215
-  id: maurin_pnliprp1_2024
+  - family: Wisudawati
+    given: Dinda
+  - family: Istiawan
+    given: Deden
+  container-title: University Research Colloquium
+  id: dinda_2017
   issn: 0012-1797, 1939-327X
-  issued: 2025-01
+  issued: 2017-02
   page: db240215
-  title: "*Deden* hypermethylation in exocrine pancreas links type 2
-    diabetes and cholesterol metabolism"
+  title: Estimasi parameter regresi logistik dengan metode bootstrap dan
+    jackknife untuk sampel kecil
   type: article-journal
-  url: "https://diabetesjournals.org/diabetes/article/doi/10.2337/db24-0215/157087/PNLIPRP1-hypermethylation-in-exocrine-pancreas"
-  journal-title: '*Diabetes*'
-  date: 2025-01
-  path: https://doi.org/10.2337/db24-0215
+  url: "https://www.researchgate.net/publication/320620124_Estimasi_Parameter_Regresi_Logistik_Dengan_Metode_Bootstrap_Dan_Jackknife_Untuk_Sampel_Kecil"
+  journal-title: '*University Research Colloquium*'
+  date: 2017-02
+  position: '2/2'
   first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2017-02-18
+  annote: first
+  author:
+  - family: Apriliyaningsih
+    given: Ivon
+  - family: Istiawan
+    given: Deden
+  container-title: University Research Colloquium
+  id: ivon_2017
+  issn: 0012-1797, 1939-327X
+  issued: 2017-02
+  page: db240215
+  title: Penerapan seleksi atribut berdasarkan koefisien variansi dan
+    korelasi untuk inisialisasi pusat awal klaster pada algoritma
+    k-means dalam pemetaan e-government tahun 2016
+  type: article-journal
+  url: "https://journal.unimma.ac.id/index.php/urecol/article/view/1074"
+  journal-title: '*University Research Colloquium*'
+  date: 2017-02
+  position: '2/2'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2017-02-18
+  annote: first
+  author:
+  - family: Nidyashofa
+    given: Nurika
+  - family: Istiawan
+    given: Deden
+  container-title: University Research Colloquium
+  id: nurika_2017
+  issn: 0012-1797, 1939-327X
+  issued: 2017-02
+  page: db240215
+  title: Penerapan algoritma fuzzy c-means untuk pengelompokan
+    kabupaten/kota di jawa tengah berdasarkan status kesejahteraan tahun
+    2015
+  type: article-journal
+  url: "https://journal.unimma.ac.id/index.php/urecol/article/view/1076"
+  journal-title: '*University Research Colloquium*'
+  date: 2017-02
+  position: '2/2'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2017-02-18
+  annote: first
+  author:
+  - family: Yulianita
+    given: Tanti
+  - family: Istiawan
+    given: Deden
+  container-title: University Research Colloquium
+  id: tanti_2017
+  issn: 0012-1797, 1939-327X
+  issued: 2017-02
+  page: db240215
+  title: Implementasi algoritma k-modes untuk penentuan prioritas
+    rehabilitasi daerah aliran sungai berdasarkan parameter lahan kritis
+  type: article-journal
+  url: "https://journal.unimma.ac.id/index.php/urecol/article/view/1426"
+  journal-title: '*University Research Colloquium*'
+  date: 2017-02
+  position: '2/2'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2018-02-21
+  annote: first
+  author:
+  - family: Yulianita
+    given: Tanti
+  - family: Istiawan
+    given: Deden
+  container-title: University Research Colloquium
+  id: amrul_2018
+  issn: 0012-1797, 1939-327X
+  issued: 2018-02
+  page: db240215
+  title: Penerapan algoritma self organizing maps untuk pemetaan
+    penyandang kesejahteraan sosial (PMKS) di provinsi jawa tengah tahun
+    2016
+  type: article-journal
+  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:qjMakFHDy7sC"
+  journal-title: '*University Research Colloquium*'
+  date: 2018-02
+  position: '2/2'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2018-02-21
+  annote: first
+  author:
+  - family: Yulianita
+    given: Tanti
+  - family: Istiawan
+    given: Deden
+  container-title: University Research Colloquium
+  id: amrul_2018
+  issn: 0012-1797, 1939-327X
+  issued: 2018-02
+  page: db240215
+  title: Penerapan algoritma self organizing maps untuk pemetaan
+    penyandang kesejahteraan sosial (PMKS) di provinsi jawa tengah tahun
+    2016
+  type: article-journal
+  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:qjMakFHDy7sC"
+  journal-title: '*University Research Colloquium*'
+  date: 2018-02
+  position: '2/2'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2018-02-21
+  annote: first
+  author:
+  - family: Khotimah
+    given: Nur
+  - family: Istiawan
+    given: Deden
+  container-title: University Research Colloquium
+  id: khotim_2018
+  issn: 0012-1797, 1939-327X
+  issued: 2018-02
+  page: db240215
+  title: Perbandingan algoritma C4. 5, naïve bayes dan k-nearest
+    neighbour untuk prediksi lahan kritis di kabupaten pemalang
+  type: article-journal
+  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:qjMakFHDy7sC"
+  journal-title: '*University Research Colloquium*'
+  date: 2018-02
+  position: '2/2'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2018-02-21
+  annote: first
+  author:
+  - family: Mashfuufah
+    given: Syayidati
+  - family: Istiawan
+    given: Deden
+  container-title: University Research Colloquium
+  id: syayidati_2018
+  issn: 0012-1797, 1939-327X
+  issued: 2018-02
+  page: db240215
+  title: Penerapan partition entropy index, partition coefficient index
+    dan xie BeniIndex untuk penentuan jumlah klaster optimal pada
+    algoritma fuzzy c-means dalam pemetaan tingkat kesejahteraan
+    penduduk jawa tengah
+  type: article-journal
+  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:qjMakFHDy7sC"
+  journal-title: '*University Research Colloquium*'
+  date: 2018-02
+  position: '2/2'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2018-02-21
+  annote: first
+  author:
+  - family: Istiawan
+    given: Deden
+  container-title: University Research Colloquium
+  id: deden_2018
+  issn: 0012-1797, 1939-327X
+  issued: 2018-02
+  page: db240215
+  title: Penentuan pusat awal klaster algoritma k-means untuk pemetaan
+    tingkat kesejahteraan di provinsi jawa tengah
+  type: article-journal
+  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:qjMakFHDy7sC"
+  journal-title: '*University Research Colloquium*'
+  date: 2018-02
+  position: '1/1'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2018-02-21
+  annote: first
+  author:
+  - family: Istiawan
+    given: Deden
+  container-title: University Research Colloquium
+  id: deden_2019
+  issn: 0012-1797, 1939-327X
+  issued: 2019-04
+  page: db240215
+  title: Implementasi algoritma naive bayes untuk klasifikasi lahan
+    kritis pada kawasan budidaya pertanian
+  type: article-journal
+  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:qjMakFHDy7sC"
+  journal-title: '*University Research Colloquium*'
+  date: 2019-04
+  position: '1/1'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2018-02-21
+  annote: first
+  author:
+  - family: Nirwana
+    given: Rijna
+  - family: Istiawan
+    given: Deden
+  container-title: University Research Colloquium
+  id: rijna_2019
+  issn: 0012-1797, 1939-327X
+  issued: 2019-04
+  page: db240215
+  title: Pemetaan kabupaten/kota di provinsi jawa tengah berdasarkan
+    tingkat kemiskinan menggunakan algoritma k-harmonic means
+  type: article-journal
+  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:qjMakFHDy7sC"
+  journal-title: '*University Research Colloquium*'
+  date: 2019-04
+  position: '2/2'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2018-02-21
+  annote: first
+  author:
+  - family: Istiawan
+    given: Deden
+  - family: Khikmah
+    given: Laelatul
+  container-title: Indonesian Journal of Artificial Intelligence and
+    Data Mining
+  doi: 10.24014/ijaidm.v2i2.7569
+  id: deden_khimah_2019
+  issn: 0012-1797, 1939-327X
+  issued: 2019-09
+  page: db240215
+  title: Implementation of C4.5 algorithm for critical land prediction
+    in agricultural cultivation areas in pemali jratun watershed
+  type: article-journal
+  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:qjMakFHDy7sC"
+  journal-title: '*Indonesian Journal of Artificial Intelligence and*'
+  date: 2019-09
+  path: https://doi.org/10.24014/ijaidm.v2i2.7569
+  position: '1/2'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2018-02-21
+  annote: first
+  author:
+  - family: Istiawan
+    given: Deden
+  container-title: Journal of Intelligent Computing and Health
+    Informatics
+  doi: 10.26714/jichi.v1i1.5380
+  id: deden_2020
+  issn: 0012-1797, 1939-327X
+  issued: 2020-03
+  page: db240215
+  title: Poverty mapping in central java province using k-means
+    algorithm
+  type: article-journal
+  url: "https://jurnal.unimus.ac.id/index.php/ICHI/article/view/5380"
+  journal-title: '*Journal of Intelligent Computing and Health*'
+  date: 2020-03
+  path: https://doi.org/10.26714/jichi.v1i1.5380
+  position: '1/1'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2020-10-31
+  annote: first
+  author:
+  - family: Istiawan
+    given: Deden
+  container-title: Jurnal Teknologi dan Sistem Komputer
+  doi: 10.14710/jtsiskom.2020.13668
+  id: deden_2020
+  issn: 0012-1797, 1939-327X
+  issued: 2020-10
+  page: db240215
+  title: Comparative analysis of classification algorithms for critical
+    land prediction in agricultural cultivation areas
+  type: article-journal
+  url: "https://jtsiskom.undip.ac.id/article/view/13668"
+  journal-title: '*Jurnal Teknologi dan Sistem Komputer*'
+  date: 2020-10
+  path: https://doi.org/10.14710/jtsiskom.2020.13668
+  position: '1/1'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2020-10-31
+  annote: first
+  author:
+  - family: Syukur
+    given: Abdul
+  - family: Istiawan
+    given: Deden
+  container-title: International Journal of Intelligent Engineering and
+    Systems
+  doi: 10.22266/ijies2021.0228.42
+  id: deden_2021
+  issn: 0012-1797, 1939-327X
+  issued: 2021-01
+  page: db240215
+  title: "Prediction of LQ45 index in indonesia stock exchange: A
+    comparative study of machine learning techniques"
+  title-short: Prediction of LQ45 index in indonesia stock exchange
+  type: article-journal
+  url: "https://www.inass.org/2021/2021022842.pdf"
+  journal-title: '*International Journal of Intelligent Engineering and*'
+  date: 2021-01
+  path: https://doi.org/10.22266/ijies2021.0228.42
+  position: '2/2'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2020-10-31
+  annote: first
+  author:
+  - family: Arahman
+    given: Malik
+  - family: Istiawan
+    given: Deden
+  container-title: Journal of Applied Statistics and Data Mining
+  id: deden\_\_malik_2021
+  issn: 0012-1797, 1939-327X
+  issued: 2021-12
+  page: db240215
+  title: Penerapan algoritma C4. 5 untuk klasifikasi lahan kritis
+    kabupaten grobogan
+  type: article-journal
+  url: "https://www.inass.org/2021/2021022842.pdf"
+  journal-title: '*Journal of Applied Statistics and Data Mining*'
+  date: 2021-12
+  position: '2/2'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2020-10-31
+  annote: first
+  author:
+  - family: Maria
+    given: Elok
+  - family: Istiawan
+    given: Deden
+  container-title: Journal of Applied Statistics and Data Mining
+  id: deden_maria_2021
+  issn: 0012-1797, 1939-327X
+  issued: 2021-06
+  page: db240215
+  title: Penentuan pusat awal klaster algoritma k-means untuk
+    pengelompokan kabupaten/kota di jawa timur berdasarkan tingkat
+    kemiskinan
+  type: article-journal
+  url: "https://www.inass.org/2021/2021022842.pdf"
+  journal-title: '*Journal of Applied Statistics and Data Mining*'
+  date: 2021-06
+  position: '2/2'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2020-10-31
+  annote: first
+  author:
+  - family: Ilham
+    given: Iqbal
+  - family: Istiawan
+    given: Deden
+  container-title: Journal of Applied Statistics and Data Mining
+  id: deden_iqbal_2021
+  issn: 0012-1797, 1939-327X
+  issued: 2021-12
+  page: db240215
+  title: Penerapan algoritma self organizing maps untuk pengelompokkan
+    penyandang masalah kesejahteraan sosial di provinsi jawa tengah
+  type: article-journal
+  url: "https://www.inass.org/2021/2021022842.pdf"
+  journal-title: '*Journal of Applied Statistics and Data Mining*'
+  date: 2021-12
+  position: '2/2'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2020-10-31
+  annote: first
+  author:
+  - family: Devi
+    given: Chintya
+  - family: Istiawan
+    given: Deden
+  container-title: International Journal of Intelligent Engineering and
+    Systems
+  id: deden_devi_2021
+  issn: 0012-1797, 1939-327X
+  issued: 2021-12
+  page: db240215
+  title: Pengelompokan tingkat kemiskinan kabupaten/kota di provinsi
+    jawa timur mengunakan algoritma k-means++
+  type: article-journal
+  url: "https://www.inass.org/2021/2021022842.pdf"
+  journal-title: '*International Journal of Intelligent Engineering and*'
+  date: 2021-12
+  position: '2/2'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2020-10-31
+  annote: first
+  author:
+  - family: Gunawan
+    given: Arif
+  - family: Istiawan
+    given: Deden
+  - family: Laelatul
+    given: Khikmah
+  container-title: International Journal of Intelligent Engineering and
+    Systems
+  doi: 10.19109/intizar.v28i2.14113
+  id: deden_arif_2022
+  issn: 0012-1797, 1939-327X
+  issued: 2022-12
+  page: db240215
+  title: Analisis indeks kerukunan umat beragama di provinsi kalimantan
+    barat
+  type: article-journal
+  url: "https://jurnal.radenfatah.ac.id/index.php/intizar/article/view/14113"
+  journal-title: '*International Journal of Intelligent Engineering and*'
+  date: 2022-12
+  path: https://doi.org/10.19109/intizar.v28i2.14113
+  position: '2/3'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2020-10-31
+  annote: first
+  author:
+  - family: Istiawan
+    given: Deden
+  - family: Sulistijanti
+    given: Wellie
+  - family: Arif
+    given: GUnawan
+  - family: Ustiannie
+    given: Windyaning
+  container-title: Journal of Intelligent Computing and Health
+    Informatics
+  doi: 10.26714/jichi.v4i1.11715
+  id: deden_windy_2023
+  issn: 0012-1797, 1939-327X
+  issued: 2023-03
+  page: db240215
+  title: Mapping religious harmony in the special capital region jakarta
+    using k-means algorithm
+  type: article-journal
+  url: "https://jurnal.radenfatah.ac.id/index.php/intizar/article/view/14113"
+  journal-title: '*Journal of Intelligent Computing and Health*'
+  date: 2023-03
+  path: https://doi.org/10.26714/jichi.v4i1.11715
+  position: '1/4'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2020-10-31
+  annote: first
+  author:
+  - family: Syukur
+    given: Abdul
+  - family: Istiawan
+    given: Deden
+  - family: Sulistijanti
+    given: Wellie
+  - family: Ilham
+    given: ahmad
+  container-title: AIP Conference Proceedings
+  doi: 10.1063/5.0153673
+  id: deden_abdul_2023
+  issn: 0012-1797, 1939-327X
+  issued: 2023-05
+  page: db240215
+  title: Hybrid genetic feature selection and support vector machine for
+    prediction LQ45 index in indonesia stock exchange
+  type: article-journal
+  url: "https://jurnal.radenfatah.ac.id/index.php/intizar/article/view/14113"
+  journal-title: '*AIP Conference Proceedings*'
+  date: 2023-05
+  path: https://doi.org/10.1063/5.0153673
+  position: '2/4'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2020-10-31
+  annote: first
+  author:
+  - family: Istiawan
+    given: Deden
+  - family: Huda
+    given: Nurul
+  - family: Sudastro
+    given: Fauzah
+    suffix: Rosidin
+  - family: Apil
+    given: Israpil
+  - family: Hidayat
+    given: Aris
+  - family: Martiningsih
+    given: DWi
+  - family: Jef
+    given: Irwan
+  container-title: Revista de Gestão Social e Ambiental
+  doi: 10.24857/rgsa.v17n5-004
+  id: deden_rosidin_2023
+  issn: 0012-1797, 1939-327X
+  issued: 2023-06
+  page: db240215
+  title: Portrait of religious harmony in special capital region of
+    jakarta, indonesia
+  type: article-journal
+  url: "https://rgsa.openaccesspublications.org/rgsa/article/view/3482"
+  journal-title: '*Revista de Gestão Social e Ambiental*'
+  date: 2023-06
+  path: https://doi.org/10.24857/rgsa.v17n5-004
+  position: '1/7'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2020-10-31
+  annote: first
+  author:
+  - family: Istiawan
+    given: Deden
+  - family: Santoso
+    given: Arif Gunawan
+  - family: Rosidin
+  - family: Windiarti
+    given: Ika Safitri
+  container-title: "Profetika: Jurnal Studi Islam"
+  doi: 10.23917/profetika.v24i02.1900
+  id: deden_arif_2023
+  issn: 0012-1797, 1939-327X
+  issued: 2023-07
+  page: db240215
+  title: Religious harmony index in special region of yogyakarta
+  type: article-journal
+  url: "https://journals2.ums.ac.id/index.php/profetika/article/view/1900"
+  journal-title: '*"Profetika: Jurnal Studi Islam"*'
+  date: 2023-07
+  path: https://doi.org/10.23917/profetika.v24i02.1900
+  position: '1/4'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2020-10-31
+  author:
+  - family: Mahiruna
+    given: Adiyah
+  - family: Rachmawanto
+    given: Eko Hari
+  - family: Istiawan
+    given: Deden
+  container-title: Journal of Intelligent Computing and Health
+    Informatics
+  doi: 10.26714/jichi.v4i2.12058
+  id: mahiruna_2023
+  issn: 0012-1797, 1939-327X
+  issued: 2023-07
+  page: db240215
+  title: Analysis of time optimization for watermark image quality using
+    run length encoding compression
+  type: article-journal
+  url: "https://jurnal.unimus.ac.id/index.php/ICHI/article/view/12058"
+  journal-title: '*Journal of Intelligent Computing and Health*'
+  date: 2023-07
+  path: https://doi.org/10.26714/jichi.v4i2.12058
+  position: '3/3'
+  first: '&emsp;&emsp;&emsp;'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2020-10-31
+  annote: first
+  author:
+  - family: Huda
+    given: Nurul
+  - family: Istiawan
+    given: Deden
+  - family: Mahiruna
+    given: Adiyah
+  - family: Sulistijanti
+    given: Wellie
+  - family: Wijayaningrum
+    given: Taswati Nova
+  container-title: Jurnal Pengabdian Masyarakat Intimas
+  doi: 10.35315/intimas.v3i2.9337
+  id: hudadeden_2023
+  issn: 0012-1797, 1939-327X
+  issued: 2023-08
+  page: db240215
+  title: Pelatihan aplikasi canva untuk meningkatkan kemampuan desain
+    grafis anggota perhimpunan human resources development jawa tengah
+  type: article-journal
+  url: "https://www.unisbank.ac.id/ojs/index.php/intimas/article/view/9337"
+  journal-title: '*Jurnal Pengabdian Masyarakat Intimas*'
+  date: 2023-08
+  path: https://doi.org/10.35315/intimas.v3i2.9337
+  position: '2/5'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2020-10-31
+  annote: first
+  author:
+  - family: Istiawan
+    given: Deden
+  - family: Huda
+    given: Nurul
+  - family: Mahiruna
+    given: Adiyah
+  - family: Ngatimin
+  - family: Prayogi
+    given: Sukmono Yogi
+  container-title: Jurnal Pengabdian Masyarakat Intimas
+  doi: 10.35315/intimas.v4i1.9775
+  id: deden_huda2023
+  issn: 0012-1797, 1939-327X
+  issued: 2024-02
+  page: db240215
+  title: Pelatihan microsoft excel untuk peningkatan soft skills anggota
+    perhimpunan human resources development jawa tengah
+  type: article-journal
+  url: "https://www.unisbank.ac.id/ojs/index.php/intimas/article/view/9775"
+  journal-title: '*Jurnal Pengabdian Masyarakat Intimas*'
+  date: 2024-02
+  path: https://doi.org/10.35315/intimas.v4i1.9775
+  position: '1/5'
+  first: '*As first or co-first*'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2020-10-31
+  author:
+  - family: Huda
+    given: Nurul
+  - family: Istiawan
+    given: Deden
+  - family: Masitha
+    given: Alya
+  - family: Mahendra
+    given: Nanda Zafran
+  container-title: Jurnal Pengabdian Informatika
+  id: huda_deden_2023
+  issn: 0012-1797, 1939-327X
+  issued: 2024-05
+  page: db240215
+  title: Pelatihan microsoft excel dalam pengembangan profesional PT.
+    Nusantara building industries
+  type: article-journal
+  url: "https://ejournal1.unud.ac.id/index.php/jupita/article/view/1003"
+  journal-title: '*Jurnal Pengabdian Informatika*'
+  date: 2024-05
+  position: '2/4'
+  first: '&emsp;&emsp;&emsp;'
+- abstract: Analysis about level of bankruptcies in the banking firm is
+    usually reflected on finance report and it need to do because bank
+    is necessary institute on economy. The method that can be used is
+    logistic regression. It is generally used to determine a
+    relationship between response variable which has only two or more
+    possible values with one or more predictor variable.
+  accessed: 2020-10-31
+  author:
+  - family: Huda
+    given: Nurul
+  - family: Istiawan
+    given: Deden
+  - family: Masitha
+    given: Alya
+  - family: Mahiruna
+    given: Adiyah
+  container-title: Jurnal Pengabdian Informatika
+  doi: 10.58169/jpmsaintek.v3i4.660
+  id: huda_2023
+  issn: 0012-1797, 1939-327X
+  issued: 2024-12
+  page: db240215
+  title: "Meningkatkan keterampilan profesional mahasiswa: Strategi
+    penguatan soft skills untuk sukses di era digital"
+  title-short: Meningkatkan keterampilan profesional mahasiswa
+  type: article-journal
+  url: "https://ftuncen.com/index.php/JPMSAINTEK/article/view/660"
+  journal-title: '*Jurnal Pengabdian Informatika*'
+  date: 2024-12
+  path: https://doi.org/10.58169/jpmsaintek.v3i4.660
+  position: '2/4'
+  first: '&emsp;&emsp;&emsp;'
