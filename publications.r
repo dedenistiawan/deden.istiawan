@@ -27,7 +27,7 @@ create_pub_listing <- function(bib_file, author = "Istiawan") {
         article,
         sub("  container-title: (.*)", "  journal-title: '*\\1*'", grep("  container-title:", article, value = TRUE)),
         sub("  issued: ", "  date: ", grep("  issued:", article, value = TRUE)),
-        sub("  doi: ", "  path: https://doi.org/", grep("doi:", article, value = TRUE)),
+        sub("  url: ", "  path: ", grep("url:", article, value = TRUE)),
         position,
         first
       )

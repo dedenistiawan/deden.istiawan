@@ -22,6 +22,7 @@
   url: "https://www.researchgate.net/publication/320620124_Estimasi_Parameter_Regresi_Logistik_Dengan_Metode_Bootstrap_Dan_Jackknife_Untuk_Sampel_Kecil"
   journal-title: '*University Research Colloquium*'
   date: 2017-02
+  path: "https://www.researchgate.net/publication/320620124_Estimasi_Parameter_Regresi_Logistik_Dengan_Metode_Bootstrap_Dan_Jackknife_Untuk_Sampel_Kecil"
   position: '2/2'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -49,6 +50,7 @@
   url: "https://journal.unimma.ac.id/index.php/urecol/article/view/1074"
   journal-title: '*University Research Colloquium*'
   date: 2017-02
+  path: "https://journal.unimma.ac.id/index.php/urecol/article/view/1074"
   position: '2/2'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -76,6 +78,7 @@
   url: "https://journal.unimma.ac.id/index.php/urecol/article/view/1076"
   journal-title: '*University Research Colloquium*'
   date: 2017-02
+  path: "https://journal.unimma.ac.id/index.php/urecol/article/view/1076"
   position: '2/2'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -102,6 +105,7 @@
   url: "https://journal.unimma.ac.id/index.php/urecol/article/view/1426"
   journal-title: '*University Research Colloquium*'
   date: 2017-02
+  path: "https://journal.unimma.ac.id/index.php/urecol/article/view/1426"
   position: '2/2'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -129,33 +133,7 @@
   url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:qjMakFHDy7sC"
   journal-title: '*University Research Colloquium*'
   date: 2018-02
-  position: '2/2'
-  first: '*As first or co-first*'
-- abstract: Analysis about level of bankruptcies in the banking firm is
-    usually reflected on finance report and it need to do because bank
-    is necessary institute on economy. The method that can be used is
-    logistic regression. It is generally used to determine a
-    relationship between response variable which has only two or more
-    possible values with one or more predictor variable.
-  accessed: 2018-02-21
-  annote: first
-  author:
-  - family: Yulianita
-    given: Tanti
-  - family: Istiawan
-    given: Deden
-  container-title: University Research Colloquium
-  id: amrul_2018
-  issn: 0012-1797, 1939-327X
-  issued: 2018-02
-  page: db240215
-  title: Penerapan algoritma self organizing maps untuk pemetaan
-    penyandang kesejahteraan sosial (PMKS) di provinsi jawa tengah tahun
-    2016
-  type: article-journal
-  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:qjMakFHDy7sC"
-  journal-title: '*University Research Colloquium*'
-  date: 2018-02
+  path: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:qjMakFHDy7sC"
   position: '2/2'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -179,9 +157,10 @@
   title: Perbandingan algoritma C4. 5, naïve bayes dan k-nearest
     neighbour untuk prediksi lahan kritis di kabupaten pemalang
   type: article-journal
-  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:qjMakFHDy7sC"
+  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:IjCSPb-OGe4C"
   journal-title: '*University Research Colloquium*'
   date: 2018-02
+  path: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:IjCSPb-OGe4C"
   position: '2/2'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -207,9 +186,10 @@
     algoritma fuzzy c-means dalam pemetaan tingkat kesejahteraan
     penduduk jawa tengah
   type: article-journal
-  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:qjMakFHDy7sC"
+  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:UeHWp8X0CEIC"
   journal-title: '*University Research Colloquium*'
   date: 2018-02
+  path: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:UeHWp8X0CEIC"
   position: '2/2'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -231,9 +211,10 @@
   title: Penentuan pusat awal klaster algoritma k-means untuk pemetaan
     tingkat kesejahteraan di provinsi jawa tengah
   type: article-journal
-  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:qjMakFHDy7sC"
+  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:zYLM7Y9cAGgC"
   journal-title: '*University Research Colloquium*'
   date: 2018-02
+  path: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:zYLM7Y9cAGgC"
   position: '1/1'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -255,9 +236,10 @@
   title: Implementasi algoritma naive bayes untuk klasifikasi lahan
     kritis pada kawasan budidaya pertanian
   type: article-journal
-  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:qjMakFHDy7sC"
+  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:Tyk-4Ss8FVUC"
   journal-title: '*University Research Colloquium*'
   date: 2019-04
+  path: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:Tyk-4Ss8FVUC"
   position: '1/1'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -281,9 +263,10 @@
   title: Pemetaan kabupaten/kota di provinsi jawa tengah berdasarkan
     tingkat kemiskinan menggunakan algoritma k-harmonic means
   type: article-journal
-  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:qjMakFHDy7sC"
+  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:Y0pCki6q_DkC"
   journal-title: '*University Research Colloquium*'
   date: 2019-04
+  path: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:Y0pCki6q_DkC"
   position: '2/2'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -309,10 +292,10 @@
   title: Implementation of C4.5 algorithm for critical land prediction
     in agricultural cultivation areas in pemali jratun watershed
   type: article-journal
-  url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LbEB2CgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=LbEB2CgAAAAJ:qjMakFHDy7sC"
+  url: "https://ejournal.uin-suska.ac.id/index.php/IJAIDM/article/view/7569"
   journal-title: '*Indonesian Journal of Artificial Intelligence and*'
   date: 2019-09
-  path: https://doi.org/10.24014/ijaidm.v2i2.7569
+  path: "https://ejournal.uin-suska.ac.id/index.php/IJAIDM/article/view/7569"
   position: '1/2'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -339,7 +322,7 @@
   url: "https://jurnal.unimus.ac.id/index.php/ICHI/article/view/5380"
   journal-title: '*Journal of Intelligent Computing and Health*'
   date: 2020-03
-  path: https://doi.org/10.26714/jichi.v1i1.5380
+  path: "https://jurnal.unimus.ac.id/index.php/ICHI/article/view/5380"
   position: '1/1'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -365,7 +348,7 @@
   url: "https://jtsiskom.undip.ac.id/article/view/13668"
   journal-title: '*Jurnal Teknologi dan Sistem Komputer*'
   date: 2020-10
-  path: https://doi.org/10.14710/jtsiskom.2020.13668
+  path: "https://jtsiskom.undip.ac.id/article/view/13668"
   position: '1/1'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -392,10 +375,10 @@
     comparative study of machine learning techniques"
   title-short: Prediction of LQ45 index in indonesia stock exchange
   type: article-journal
-  url: "https://www.inass.org/2021/2021022842.pdf"
+  url: "https://inass.org/publications/contents/?y=2021&mo_num=2&mo_en=Feb&mo_enf=February&report_day=28&volume=14&issue=1"
   journal-title: '*International Journal of Intelligent Engineering and*'
   date: 2021-01
-  path: https://doi.org/10.22266/ijies2021.0228.42
+  path: "https://inass.org/publications/contents/?y=2021&mo_num=2&mo_en=Feb&mo_enf=February&report_day=28&volume=14&issue=1"
   position: '2/2'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -422,6 +405,7 @@
   url: "https://www.inass.org/2021/2021022842.pdf"
   journal-title: '*Journal of Applied Statistics and Data Mining*'
   date: 2021-12
+  path: "https://www.inass.org/2021/2021022842.pdf"
   position: '2/2'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -446,9 +430,10 @@
     pengelompokan kabupaten/kota di jawa timur berdasarkan tingkat
     kemiskinan
   type: article-journal
-  url: "https://www.inass.org/2021/2021022842.pdf"
+  url: "https://journal.itesa.ac.id/index.php/jasdm/article/view/18"
   journal-title: '*Journal of Applied Statistics and Data Mining*'
   date: 2021-06
+  path: "https://journal.itesa.ac.id/index.php/jasdm/article/view/18"
   position: '2/2'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -472,9 +457,10 @@
   title: Penerapan algoritma self organizing maps untuk pengelompokkan
     penyandang masalah kesejahteraan sosial di provinsi jawa tengah
   type: article-journal
-  url: "https://www.inass.org/2021/2021022842.pdf"
+  url: "https://journal.itesa.ac.id/index.php/jasdm/article/view/21"
   journal-title: '*Journal of Applied Statistics and Data Mining*'
   date: 2021-12
+  path: "https://journal.itesa.ac.id/index.php/jasdm/article/view/21"
   position: '2/2'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -490,8 +476,7 @@
     given: Chintya
   - family: Istiawan
     given: Deden
-  container-title: International Journal of Intelligent Engineering and
-    Systems
+  container-title: Journal of Applied Statistics and Data Mining
   id: deden_devi_2021
   issn: 0012-1797, 1939-327X
   issued: 2021-12
@@ -499,9 +484,10 @@
   title: Pengelompokan tingkat kemiskinan kabupaten/kota di provinsi
     jawa timur mengunakan algoritma k-means++
   type: article-journal
-  url: "https://www.inass.org/2021/2021022842.pdf"
-  journal-title: '*International Journal of Intelligent Engineering and*'
+  url: "https://journal.itesa.ac.id/index.php/jasdm/article/view/39"
+  journal-title: '*Journal of Applied Statistics and Data Mining*'
   date: 2021-12
+  path: "https://journal.itesa.ac.id/index.php/jasdm/article/view/39"
   position: '2/2'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -532,7 +518,7 @@
   url: "https://jurnal.radenfatah.ac.id/index.php/intizar/article/view/14113"
   journal-title: '*International Journal of Intelligent Engineering and*'
   date: 2022-12
-  path: https://doi.org/10.19109/intizar.v28i2.14113
+  path: "https://jurnal.radenfatah.ac.id/index.php/intizar/article/view/14113"
   position: '2/3'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -565,7 +551,7 @@
   url: "https://jurnal.radenfatah.ac.id/index.php/intizar/article/view/14113"
   journal-title: '*Journal of Intelligent Computing and Health*'
   date: 2023-03
-  path: https://doi.org/10.26714/jichi.v4i1.11715
+  path: "https://jurnal.radenfatah.ac.id/index.php/intizar/article/view/14113"
   position: '1/4'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -594,10 +580,10 @@
   title: Hybrid genetic feature selection and support vector machine for
     prediction LQ45 index in indonesia stock exchange
   type: article-journal
-  url: "https://jurnal.radenfatah.ac.id/index.php/intizar/article/view/14113"
+  url: "https://pubs.aip.org/aip/acp/article-abstract/2720/1/020017/2893057/Hybrid-genetic-feature-selection-and-support"
   journal-title: '*AIP Conference Proceedings*'
   date: 2023-05
-  path: https://doi.org/10.1063/5.0153673
+  path: "https://pubs.aip.org/aip/acp/article-abstract/2720/1/020017/2893057/Hybrid-genetic-feature-selection-and-support"
   position: '2/4'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -636,7 +622,7 @@
   url: "https://rgsa.openaccesspublications.org/rgsa/article/view/3482"
   journal-title: '*Revista de Gestão Social e Ambiental*'
   date: 2023-06
-  path: https://doi.org/10.24857/rgsa.v17n5-004
+  path: "https://rgsa.openaccesspublications.org/rgsa/article/view/3482"
   position: '1/7'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -666,7 +652,7 @@
   url: "https://journals2.ums.ac.id/index.php/profetika/article/view/1900"
   journal-title: '*"Profetika: Jurnal Studi Islam"*'
   date: 2023-07
-  path: https://doi.org/10.23917/profetika.v24i02.1900
+  path: "https://journals2.ums.ac.id/index.php/profetika/article/view/1900"
   position: '1/4'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -696,7 +682,7 @@
   url: "https://jurnal.unimus.ac.id/index.php/ICHI/article/view/12058"
   journal-title: '*Journal of Intelligent Computing and Health*'
   date: 2023-07
-  path: https://doi.org/10.26714/jichi.v4i2.12058
+  path: "https://jurnal.unimus.ac.id/index.php/ICHI/article/view/12058"
   position: '3/3'
   first: '&emsp;&emsp;&emsp;'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -730,7 +716,7 @@
   url: "https://www.unisbank.ac.id/ojs/index.php/intimas/article/view/9337"
   journal-title: '*Jurnal Pengabdian Masyarakat Intimas*'
   date: 2023-08
-  path: https://doi.org/10.35315/intimas.v3i2.9337
+  path: "https://www.unisbank.ac.id/ojs/index.php/intimas/article/view/9337"
   position: '2/5'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -763,7 +749,7 @@
   url: "https://www.unisbank.ac.id/ojs/index.php/intimas/article/view/9775"
   journal-title: '*Jurnal Pengabdian Masyarakat Intimas*'
   date: 2024-02
-  path: https://doi.org/10.35315/intimas.v4i1.9775
+  path: "https://www.unisbank.ac.id/ojs/index.php/intimas/article/view/9775"
   position: '1/5'
   first: '*As first or co-first*'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -793,6 +779,7 @@
   url: "https://ejournal1.unud.ac.id/index.php/jupita/article/view/1003"
   journal-title: '*Jurnal Pengabdian Informatika*'
   date: 2024-05
+  path: "https://ejournal1.unud.ac.id/index.php/jupita/article/view/1003"
   position: '2/4'
   first: '&emsp;&emsp;&emsp;'
 - abstract: Analysis about level of bankruptcies in the banking firm is
@@ -811,7 +798,7 @@
     given: Alya
   - family: Mahiruna
     given: Adiyah
-  container-title: Jurnal Pengabdian Informatika
+  container-title: Jurnal Pengabdian Masyarakat Sains Dan Teknologi
   doi: 10.58169/jpmsaintek.v3i4.660
   id: huda_2023
   issn: 0012-1797, 1939-327X
@@ -822,8 +809,8 @@
   title-short: Meningkatkan keterampilan profesional mahasiswa
   type: article-journal
   url: "https://ftuncen.com/index.php/JPMSAINTEK/article/view/660"
-  journal-title: '*Jurnal Pengabdian Informatika*'
+  journal-title: '*Jurnal Pengabdian Masyarakat Sains Dan Teknologi*'
   date: 2024-12
-  path: https://doi.org/10.58169/jpmsaintek.v3i4.660
+  path: "https://ftuncen.com/index.php/JPMSAINTEK/article/view/660"
   position: '2/4'
   first: '&emsp;&emsp;&emsp;'
