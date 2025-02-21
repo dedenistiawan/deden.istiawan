@@ -1,7 +1,7 @@
 ---
 title: "Deden Istiawan"
 subtitle: |
-  Lecturer + Data Scientist.
+    قيدوا العلم بالكتاب
 image: /assets/images/profil-1.png
 about:
   id: edu-exp

@@ -1,0 +1,20 @@
+---
+image: featured.png
+title: Transformasi Data Menjadi Visual yang Bermakna
+author:
+  - name: Deden Istiawan
+    affiliations:
+      - Balai Litbang Agama Semarang
+description: |
+  Visualisasi data bukan sekadar tentang grafik dan angka, melainkan cara untuk menyampaikan cerita yang bermakna.
+abstract: Dalam pelatihan visualisasi data yang diselenggarakan oleh Balai Litbang Agama Semarang, peserta diajak untuk menguasai teknik-teknik canggih dalam mengubah data kompleks menjadi visual yang mudah dipahami dan menarik.
+date: "2020-04-15"
+caegories:
+  - DataViz
+  - R
+  - Excel
+---
+
+![](featured.gif){fig-alt="Blas" fig-align="center" width="50%"}
+
+- Slides: <https://shorturl.at/1lnZm>.
