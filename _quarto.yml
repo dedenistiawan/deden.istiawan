@@ -11,7 +11,7 @@ website:
   favicon: /assets/images/icon2.png
   image: /assets/images/profil-1.png
   site-url: https://dedenistiawan.netlify.app/
-  repo-url: https://github.com/dedenistiawan
+  repo-url: https://github.com/dedenistiawan/
   repo-actions: [edit, issue]
   open-graph: true
   twitter-card: true
@@ -20,9 +20,10 @@ website:
   page-footer:
     border: true
     left: |
-      Powered by [{{< iconify simple-icons:quarto >}} Quarto](https://quarto.org).
+      Powered by {{< iconify simple-icons:quarto >}} Quarto. 
+      Base on MCU
     center: |
-      &copy; []{#current-year} Deden Istiawan. [{{< iconify octicon:heart-fill-16 >}} Sponsor](https://github.com/dedenistiawan).
+      &copy; []{#current-year} Deden Istiawan. [{{< iconify octicon:heart-fill-16 >}} Sponsor](https://github.com/sponsors/dedenistiawan).
     right: |
       License: [CC BY NC SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0).
   navbar:
@@ -52,7 +53,7 @@ website:
       - text: "{{< iconify octicon:mark-github-16 >}}"
         href: "https://github.com/dedenistiawan"
       - text: "{{< iconify octicon:heart-fill-16 >}}"
-        href: "https://github.com/dedenistiawan"
+        href: "https://github.com/sponsors/dedenistiawan"
 
 format:
   html:

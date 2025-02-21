@@ -8,9 +8,9 @@ freeze: true
 title-block-banner: true
 
 author:
-  - name: "Mickaël CANOUIL, _Ph.D._"
-    orcid: "0000-0002-3396-4549"
-    url: "https://mickael.canouil.fr"
+  - name: "Deden Istiawan, _M.Kom._"
+    orcid: "0000-0002-0947-9623"
+    url: "https://dedenistiawan.netlify.app/"
 
 toc: true
 number-sections: true
@@ -18,8 +18,8 @@ back-to-top-navigation: true
 
 comments:
   giscus: 
-    repo: mcanouil/mickael.canouil.fr
-    repo-id: MDEwOlJlcG9zaXRvcnkzNDcwODgwMDM=
+    repo: dedenistiawan/deden.istiawan
+    repo-id: R_kgDON8dGSg
     theme: dark_dimmed
     category: "Blog posts"
     category-id: DIC_kwDOFLAkg84CSh-t
