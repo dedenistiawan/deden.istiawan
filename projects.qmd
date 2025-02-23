@@ -20,10 +20,4 @@ listing:
         description: "Buku ini membahas teori dan impelentasi algoritma clustering dengan R"
         date: "2025-02-19"
         categories: [Bookdown, Rmarkdown, RStudio, R, LaTex, HTML]
-      - path: https://ggplot2.netlify.app/
-        image: /projects/ggplot.png
-        title: "Visualisasi Data ggplot2"
-        description: "Membuat visualisasi data yang efektif menggunakan ggplot2"
-        date: "2024-12-14"
-        categories: [Rmarkdown, ggplot2, HTML, LaTeX, Dataviz]
 ---

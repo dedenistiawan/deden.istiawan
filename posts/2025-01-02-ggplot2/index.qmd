@@ -1,0 +1,529 @@
+---
+title: "ggplot2: Senjata Ampuh untuk Visualisasi Data yang Memukau"
+description: |
+  Pernah nggak sih kamu merasa data itu membosankan? Deretan angka, tabel, dan statistik yang bikin pusing tujuh keliling. Tapi, apa jadinya kalau data itu bisa "berbicara" melalui visualisasi yang keren dan mudah dipahami? Nah, di sinilah ggplot2 datang sebagai superhero! 🦸‍♂️🦸‍♀️
+date: "2024-09-02"
+categories: [ggplot2, DataViz, Chart]
+image: featured.png
+image-alt: |
+  ilustrasi allisonhorst ggplot2.
+toc-depth: 5
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+`ggplot2` adalah salah satu tools paling powerful di R yang bisa mengubah data mentahmu menjadi grafik-grafik memukau.
+Bayangkan, dengan beberapa baris kode, kamu bisa menciptakan visualisasi yang nggak cuma informatif, tapi juga Instagramable!
+📊✨
+
+![](ggplot.png){fig-alt="gganimate pada gapminder." fig-align="center" width="50%"} Artwork by [\@allison_horst](https://x.com/allison_horst)
+
+Pada kesempatan kali ini, kita akan menjelajahi dunia seru visualisasi data menggunakan ggplot2 di R.
+Bukan cuma teori, kita akan langsung praktik dan eksplorasi cara-cara keren untuk mengubah data mentah menjadi visual yang memukau.
+Apa saja yang akan kita bahas!
+Berikut adalah cara menginstal dan memuat paket-paket R yang Anda sebutkan.
+Pastikan Anda sudah memiliki R dan RStudio terinstal di komputer Anda sebelum menjalankan kode di bawah ini.
+
+## Instal Paket
+
+Jalankan perintah berikut di konsol R untuk menginstal paket-paket yang diperlukan:
+
+``` yml
+install.packages("tidyverse")
+install.packages("here")
+install.packages("janitor")
+install.packages("patchwork")
+install.packages("ggrepel")
+install.packages("gghighlight")
+install.packages("paletteer")
+install.packages("ggExtra")
+install.packages("ggbeeswarm")
+```
+
+## Muat Paket
+
+Setelah paket-paket tersebut terinstal, muat paket-paket tersebut ke dalam sesi R Anda dengan perintah berikut:
+
+```{r}
+library(tidyverse)   # Untuk manipulasi data dan visualisasi dasar
+library(here)        # Untuk manajemen direktori yang lebih mudah
+library(janitor)     # Untuk membersihkan data
+library(patchwork)   # Untuk menggabungkan beberapa grafik
+library(ggrepel)     # Untuk label yang tidak saling tumpang tindih
+library(gghighlight) # Untuk menyoroti elemen data tertentu
+library(paletteer)   # Untuk skema warna yang menarik
+library(ggExtra)     # Untuk menambahkan plot marginal
+library(ggbeeswarm)  # Untuk membuat beeswarm plots
+```
+
+ggplot2 adalah library visualisasi data andalan di R yang dibangun berdasarkan prinsip **Grammar of Graphics**.
+Bayangkan ggplot2 seperti sebuah kotak peralatan seni: ia memberi kita semua alat yang dibutuhkan untuk mengubah data mentah menjadi visualisasi yang memukau.
+Tapi sebelum kita bisa membuat grafik yang keren, ada tiga hal dasar yang perlu dipahami.
+
+Pertama, kita harus memulai dengan memanggil fungsi `ggplot()`.
+Ini seperti membentangkan kanvas kosong sebelum mulai melukis.
+Tanpa data atau elemen tambahan, `ggplot()` hanya akan menghasilkan ruang kosong, tapi ini adalah langkah penting untuk memulai.
+
+Kedua, kita perlu menentukan **data** yang akan digunakan.
+Data ini biasanya dalam bentuk data frame atau tibble, seperti tabel yang berisi informasi yang ingin kita visualisasikan.
+Misalnya, jika kita punya data tentang kadal (`lizards`), kita bisa memberitahu ggplot2 untuk menggunakan data tersebut sebagai bahan baku grafik kita.
+
+Terakhir, kita harus memilih **jenis grafik** yang ingin dibuat.
+Apakah kita ingin menampilkan hubungan antara dua variabel dengan plot titik (`geom_point()`), menunjukkan distribusi data dengan histogram (`geom_histogram()`), atau memvisualisasikan tren dengan plot garis (`geom_line()`)?
+Setiap jenis grafik punya keunikan dan kegunaannya sendiri.
+
+Dengan menggabungkan ketiga elemen ini—`ggplot()`, data, dan jenis grafik—kita bisa membuat visualisasi yang tidak hanya informatif, tapi juga menarik secara visual.
+Misalnya, dengan beberapa baris kode, kita bisa membuat plot titik yang menunjukkan hubungan antara panjang dan berat kadal, lengkap dengan warna yang membedakan spesiesnya.
+
+## Komponen Dasar: Rahasia di Balik Grafik ggplot2
+
+Setiap grafik ggplot2 ibarat sebuah mahakarya yang dibangun dari beberapa komponen dasar.
+Memahami komponen-komponen ini adalah kunci untuk membuat visualisasi data yang memukau.
+Mari kita telusuri satu per satu!
+
+Pertama, ada **data**.
+Ini adalah bahan baku utama grafik kita.
+Biasanya, data ini disajikan dalam bentuk data frame atau tibble, seperti tabel yang berisi informasi yang ingin kita visualisasikan.
+Tanpa data, grafik kita hanyalah kanvas kosong.
+
+Kedua, kita punya **aesthetics** (estetika).
+Ini adalah properti visual yang menentukan bagaimana data akan ditampilkan.
+Misalnya, kita bisa menggunakan warna untuk membedakan kategori, ukuran untuk menunjukkan besaran, atau bentuk untuk menandai kelompok tertentu.
+Aesthetics adalah cara kita "menghidupkan" data.
+
+Selanjutnya, ada **geoms** (objek geometris).
+Geoms adalah elemen visual yang membentuk grafik, seperti titik pada plot titik (`geom_point`), garis pada plot garis (`geom_line`), atau batang pada plot batang (`geom_bar`).
+Setiap geom punya karakteristiknya sendiri dan cocok untuk jenis data tertentu.
+
+Komponen keempat adalah **scales** (skala).
+Scales bertugas memetakan data ke aesthetics.
+Misalnya, jika kita menggunakan warna untuk membedakan kategori, scales akan menentukan warna apa yang digunakan dan bagaimana warnanya diatur.
+Scales juga mengontrol sumbu x dan y, termasuk rentang nilai dan labelnya.
+
+Terakhir, ada **facets** (faset).
+Facets memungkinkan kita membagi data menjadi beberapa subplot berdasarkan kategori tertentu.
+Ini seperti membuat beberapa grafik kecil dalam satu gambar besar, yang memudahkan kita untuk membandingkan kelompok data secara bersamaan.
+
+## Membuat Plot Titik Sederhana dengan ggplot2
+
+Mari kita langsung praktik!
+Salah satu cara terbaik untuk memahami ggplot2 adalah dengan mencoba membuat grafik sederhana.
+Di sini, kita akan membuat **plot titik** (scatter plot) yang menampilkan hubungan antara dua variabel.
+Plot titik adalah salah satu grafik paling dasar, tapi sangat powerful untuk melihat pola atau tren dalam data.
+
+Pertama, kita perlu memuat library ggplot2.
+Ini seperti membuka kotak peralatan seni sebelum mulai melukis.
+Caranya mudah, cukup jalankan perintah berikut:
+
+```{r}
+library(ggplot2)
+```
+
+Selanjutnya, kita perlu menyiapkan data.
+Untuk contoh ini, kita akan membuat data frame sederhana yang berisi 100 titik acak.
+Data frame ini memiliki dua kolom: `x` dan `y`, yang masing-masing berisi nilai acak dari distribusi normal.
+
+```{r}
+data <- data.frame(x = rnorm(100), y = rnorm(100))
+```
+
+Setelah data siap, saatnya membuat plot!
+Kita menggunakan fungsi `ggplot()` untuk memulai.
+Di dalamnya, kita tentukan data yang akan digunakan (`data`) dan **aesthetic mapping** (`aes()`), yaitu bagaimana data akan dipetakan ke sumbu x dan y.
+
+```{r}
+ggplot(data, aes(x = x, y = y))
+```
+
+Tapi, kita belum selesai!
+Kita perlu menambahkan **geom** untuk menentukan jenis grafik yang ingin dibuat.
+Untuk plot titik, kita menggunakan `geom_point()`.
+
+```{r}
+ggplot(data, aes(x = x, y = y)) +
+  geom_point()
+```
+
+Dan voilà!
+Kita sudah berhasil membuat plot titik sederhana.
+Grafik ini menampilkan 100 titik acak yang tersebar di bidang dua dimensi.
+Meskipun sederhana, plot ini adalah dasar dari banyak visualisasi yang lebih kompleks.
+
+## Custom Plot: Menambahkan Sentuhan Personal pada Grafik
+
+Setelah menguasai dasar-dasar membuat plot dengan ggplot2, saatnya kita naik level!
+Salah satu keunggulan ggplot2 adalah kemampuannya untuk dikustomisasi sesuai kebutuhan.
+Dengan menambahkan lapisan-lapisan tambahan, kita bisa membuat grafik yang tidak hanya informatif, tapi juga menarik secara visual.
+
+Mari kita lihat beberapa cara untuk mengkustomisasi plot:
+
+1.  **`labs()`: Menambahkan Label**\
+    Fungsi `labs()` memungkinkan kita menambahkan judul, label sumbu, dan keterangan lainnya ke grafik.
+    Ini seperti memberi "konteks" pada visualisasi kita, sehingga pembaca tahu apa yang sedang mereka lihat.
+
+2.  **`theme()`: Mengubah Tampilan Keseluruhan**\
+    Dengan `theme()`, kita bisa mengubah tampilan grafik secara keseluruhan, seperti font, warna latar, atau posisi legenda.
+    ggplot2 menyediakan beberapa tema bawaan, seperti `theme_minimal()` atau `theme_classic()`, yang bisa langsung digunakan untuk membuat grafik terlihat lebih profesional.
+
+3.  **`scale_color_manual()`: Mengatur Skala Warna**\
+    Jika kita ingin mengontrol warna secara manual, `scale_color_manual()` adalah alat yang tepat.
+    Ini memungkinkan kita memilih warna spesifik untuk setiap kategori dalam data.
+
+## Plot Titik dengan Sentuhan Kustom
+
+Mari kita praktikkan kustomisasi ini pada plot titik sederhana yang sudah kita buat sebelumnya.
+Berikut adalah contoh kodenya:
+
+```{r}
+# Buat plot titik dengan label dan tema kustom
+ggplot(data, aes(x = x, y = y)) +
+  geom_point() +
+  labs(title = "Plot Titik", 
+       x = "Sumbu X", 
+       y = "Sumbu Y", 
+       caption = "Sumber: Data Acak") +  # Menambahkan judul, label, dan caption
+  theme_minimal() +  # Menggunakan tema minimalis
+  theme(plot.title = element_text(hjust = 0.5, size = 16, face = "bold"))  # Kustomisasi judul
+```
+
+Grafik kita sekarang tidak hanya menampilkan data, tapi juga terlihat lebih profesional dan informatif.
+Dengan sentuhan kustomisasi, kita bisa membuat grafik yang siap dipresentasikan atau dibagikan kepada orang lain.
+
+## Faceting: Membagi Data Menjadi Beberapa Plot yang Menarik
+
+Salah satu fitur keren dari ggplot2 adalah faceting.
+Faceting memungkinkan kita membagi data menjadi beberapa subplot berdasarkan variabel kategorik.
+Ini seperti memiliki beberapa grafik kecil dalam satu gambar besar, yang memudahkan kita untuk membandingkan pola atau tren antar kelompok data.
+
+Bayangkan Anda punya data tentang dua kelompok, misalnya kelompok A dan B.
+Daripada membuat dua grafik terpisah, Anda bisa menggunakan faceting untuk menampilkan kedua kelompok dalam satu grafik yang rapi dan terorganisir.
+
+## Faceting dengan `facet_wrap()`
+
+Mari kita lihat contoh praktisnya.
+Pertama, kita buat data frame contoh yang berisi dua variabel numerik (`x` dan `y`) dan satu variabel kategorik (`grup`).
+Variabel `grup` ini akan digunakan untuk membagi data menjadi beberapa plot.
+
+```{r}
+# Buat data frame contoh dengan variabel kategorik
+data <- data.frame(
+  x = rnorm(100),  # Nilai acak untuk sumbu x
+  y = rnorm(100),  # Nilai acak untuk sumbu y
+  grup = sample(c("A", "B"), 100, replace = TRUE)  # Variabel kategorik dengan dua kelompok
+)
+```
+
+Setelah data siap, kita bisa membuat plot titik dan menggunakan `facet_wrap()` untuk membagi data berdasarkan variabel `grup`.
+
+```{r}
+# Buat plot titik dengan faceting
+ggplot(data, aes(x = x, y = y)) +
+  geom_point() +  # Plot titik
+  facet_wrap(~ grup)  # Faceting berdasarkan variabel 'grup'
+```
+
+Grafik kita sekarang terdiri dari dua plot kecil yang berdampingan.
+Setiap plot menampilkan data untuk satu grup, sehingga kita bisa dengan mudah membandingkan pola atau tren antara grup A dan grup B.
+
+## Read Data
+
+Sebelum kita bisa membuat visualisasi data yang memukau, langkah pertama yang harus dilakukan adalah **read data**.
+Di sini, kita akan menggunakan dataset tentang kadal yang disimpan dalam file `lizards.csv`.
+Dataset ini berisi informasi seperti panjang, berat, spesies, dan habitat kadal.
+
+Untuk membaca data, kita akan menggunakan dua library `readr`, library ini menyediakan fungsi cepat dan efisien untuk membaca file CSV.
+
+```{r}
+library(readr)  # Untuk membaca file CSV
+```
+
+Setelah itu, kita bisa membaca file `lizards.csv` dengan perintah berikut:
+
+```{r}
+urlfile <- "https://raw.githubusercontent.com/dedenistiawan/Dataset/refs/heads/main/lizards.csv"
+lizards <- read.csv(url(urlfile))
+```
+
+Membaca data adalah langkah krusial sebelum kita bisa melakukan analisis atau visualisasi.
+Dengan menggunakan `readr`, kita memastikan bahwa proses ini dilakukan dengan cara yang efisien dan rapi.
+
+Sekarang, data `lizards` sudah siap digunakan!
+Selanjutnya, kita bisa mulai membuat visualisasi menarik dengan `ggplot2`.
+
+## Tiga Cara untuk Membuat Grafik dengan ggplot2
+
+ggplot2 adalah library yang sangat fleksibel, dan salah satu keunggulannya adalah kita bisa membuat grafik dengan beberapa cara berbeda.
+Meskipun caranya berbeda, hasilnya tetap sama: grafik yang informatif dan menarik.
+
+### Cara 1: Semuanya dalam Satu Langkah
+
+Di cara pertama, kita menentukan **data** dan **aesthetics** (`aes`) langsung dalam fungsi `ggplot()`, lalu menambahkan **geom** (dalam hal ini, `geom_point()`).
+Ini adalah cara yang paling umum dan sering digunakan, terutama untuk grafik sederhana.
+
+```{r}
+# Cara 1: Data dan aesthetics langsung di ggplot()
+library(ggplot2)
+ggplot(data = lizards, aes(x = total_length, y = weight)) +
+  geom_point()
+```
+
+### Cara 2: Pisahkan Data dan Aesthetics
+
+Di cara kedua, kita memisahkan penentuan data dan aesthetics dari fungsi `ggplot()`.
+Ini berguna jika kita ingin menggunakan data atau aesthetics yang sama untuk beberapa grafik.
+
+```{r}
+# Cara 2: Pisahkan data dan aesthetics
+plot_base <- ggplot(data = lizards, aes(x = total_length, y = weight))
+plot_base + geom_point()
+```
+
+### Cara 3: Gunakan Pipa (`%>%`)
+
+Di cara ketiga, kita menggunakan operator pipa (`%>%`) dari paket `magrittr` atau `dplyr` untuk membuat alur kode yang lebih lancar.
+Ini sangat berguna jika kita sudah terbiasa dengan gaya pemrograman fungsional.
+
+```{r}
+# Cara 3: Gunakan pipa
+library(dplyr)  # Pastikan dplyr sudah dimuat
+lizards %>%
+  ggplot(aes(x = total_length, y = weight)) +
+  geom_point()
+```
+
+## Mengubah Jenis Grafik dengan Mudah: Cukup Ganti Geom-nya!
+
+Salah satu keunggulan besar ggplot2 adalah kemudahannya dalam **mengubah jenis grafik**.
+Dengan struktur berbasis layer, kita hanya perlu mengganti fungsi `geom_` yang digunakan, tanpa perlu mengubah keseluruhan kode.
+Ini membuat eksplorasi data menjadi lebih cepat dan fleksibel.
+
+### Contoh: Dari Plot Titik ke Plot Garis
+
+Misalnya, kita sudah membuat plot titik (scatter plot) dengan kode berikut:
+
+```{r}
+# Plot titik
+ggplot(data = lizards, aes(x = total_length, y = weight)) +
+  geom_point()
+```
+
+Hasilnya adalah grafik yang menampilkan hubungan antara panjang total (`total_length`) dan berat (`weight`) kadal dalam bentuk titik-titik.
+
+### Mengubah ke Plot Garis
+
+Jika kita ingin mengubahnya menjadi plot garis (line plot), kita hanya perlu mengganti `geom_point()` dengan `geom_line()`.
+
+```{r}
+# Plot garis
+ggplot(data = lizards, aes(x = total_length, y = weight)) +
+  geom_line()
+```
+
+### Contoh Lain: Mengubah ke Plot Batang
+
+Kita juga bisa mengubahnya menjadi plot batang (bar plot) dengan menggunakan `geom_bar()`.
+Namun, untuk plot batang, kita biasanya hanya memerlukan satu sumbu (biasanya sumbu x).
+
+```{r}
+# Plot batang (contoh sederhana)
+ggplot(data = lizards, aes(x = total_length)) +
+  geom_histogram()
+```
+
+### Menggabungkan Beberapa Geom
+
+Kita bahkan bisa menggabungkan beberapa geom dalam satu grafik.
+Misalnya, menampilkan titik dan garis sekaligus:
+
+```{r}
+# Gabungkan plot titik dan garis
+ggplot(data = lizards, aes(x = total_length, y = weight)) +
+  geom_point() +  # Tambahkan titik
+  geom_line()     # Tambahkan garis
+```
+
+## Memilih Grafik Berdasarkan Jenis Data
+
+Salah satu kunci sukses dalam visualisasi data adalah memilih jenis grafik yang sesuai dengan jenis data yang kita miliki.
+Setiap jenis data memiliki karakteristiknya sendiri, dan memilih grafik yang tepat akan membantu kita menyampaikan informasi dengan lebih efektif.
+Mari kita bahas beberapa contoh berdasarkan jenis data yang umum:
+
+### Data Kategorik dan Kontinu: Jitterplot
+
+Jika kita memiliki data dengan **satu variabel kategorik** (misalnya, nama spesies) dan **satu variabel kontinu** (misalnya, panjang total), **jitterplot** adalah pilihan yang bagus.
+Jitterplot menampilkan titik-titik data dengan sedikit "getaran" (jitter) secara horizontal atau vertikal untuk menghindari tumpang tindih.
+
+```{r}
+# Jitterplot untuk data kategorik dan kontinu
+ggplot(data = lizards, aes(y = common_name, x = total_length)) +
+  geom_jitter()
+```
+
+Kita bisa melihat distribusi panjang total (`total_length`) untuk setiap spesies kadal (`common_name`) dengan jelas, tanpa titik-titik yang saling menutupi.
+
+### Data Kontinu dan Kontinu: Scatterplot
+
+Jika kita memiliki dua variabel kontinu, **scatterplot** (plot titik) adalah pilihan yang tepat.
+Ini membantu kita melihat hubungan atau korelasi antara dua variabel.
+
+```{r}
+# Scatterplot untuk dua variabel kontinu
+ggplot(data = lizards, aes(x = total_length, y = weight)) +
+  geom_point()
+```
+
+### Data Kategorik dan Frekuensi: Barplot
+
+Jika kita memiliki data kategorik dan ingin menampilkan frekuensi atau jumlah observasi, **barplot** (plot batang) adalah pilihan yang ideal.
+
+```{r}
+# Barplot untuk data kategorik
+ggplot(data = lizards, aes(y = common_name)) +
+  geom_bar()
+```
+
+### Data Kontinu dan Distribusi: Histogram
+
+Jika kita ingin melihat distribusi dari satu variabel kontinu, **histogram** adalah pilihan yang tepat.
+
+```{r}
+# Histogram untuk data kontinu
+ggplot(data = lizards, aes(x = total_length)) +
+  geom_histogram(binwidth = 5)
+```
+
+## Aesthetic Mapping
+
+Salah satu keunggulan ggplot2 adalah kemampuannya untuk mengubah tampilan grafik dengan mudah melalui **aesthetic mapping**.
+Namun, tidak semua perubahan estetika memerlukan `aes()`.
+Jika kita ingin mengubah estetika berdasarkan **konstanta** (misalnya, "Buat semua titik berwarna biru"), kita bisa langsung menambahkan informasi tersebut ke dalam `geom_` yang relevan.
+Ketika kita ingin mengubah estetika grafik berdasarkan nilai tetap (konstanta), kita bisa langsung menambahkan parameter ke dalam `geom_`.
+Berikut adalah beberapa parameter yang sering digunakan:
+
+1.  **`fill`:** Mengubah warna isi (misalnya, isi kolom, densitas, atau kotak plot).\
+2.  **`color`:** Mengubah warna titik atau garis batas.\
+3.  **`shape`:** Mengubah gaya titik (misalnya, lingkaran, segitiga, atau kotak).\
+4.  **`alpha`:** Mengubah transparansi (0 = transparan, 1 = tidak transparan).\
+5.  **`size`:** Mengubah ukuran titik atau lebar garis.\
+6.  **`linetype`:** Mengubah jenis garis (misalnya, "titik-titik", "garis putus-putus", atau "titik-garis").
+
+
+### Membuat Grafik yang Menarik atau Mengerikan?
+
+Berikut adalah contoh penggunaan parameter estetika berdasarkan konstanta untuk membuat grafik histogram yang unik (atau mungkin agak "mengerikan"):
+
+```{r}
+# Histogram dengan estetika berdasarkan konstanta
+ggplot(data = lizards, aes(x = weight)) +
+  geom_histogram(color = "orange",  # Warna garis batas
+                 fill = "purple",   # Warna isi
+                 size = 2,          # Lebar garis batas
+                 linetype = "dotted")  # Jenis garis batas
+```
+
+1.
+**`color = "orange"`:**\
+Garis batas histogram diubah menjadi warna oranye.\
+2.
+**`fill = "purple"`:**\
+Isi histogram diubah menjadi warna ungu.\
+3.
+**`size = 2`:**\
+Lebar garis batas histogram diperbesar.\
+4.
+**`linetype = "dotted"`:**\
+Garis batas histogram diubah menjadi garis putus-putus.
+
+Kita mendapatkan histogram dengan warna dan gaya yang sangat mencolok.
+Meskipun mungkin tidak cocok untuk presentasi formal, ini adalah contoh yang bagus untuk menunjukkan fleksibilitas ggplot2 dalam mengubah estetika grafik.
+
+### Plot Titik Sederhana dengan Warna dan Ukuran Tetap
+
+```{r}
+ggplot(data = lizards, aes(x = total_length, y = weight)) +
+  geom_point(color = "blue", size = 2, shape = 16)
+```
+
+1. **`color = "blue"`:**  
+   Semua titik pada grafik diwarnai biru.  
+2. **`size = 2`:**  
+   Ukuran titik diperbesar menjadi 2 (default biasanya 1).  
+3. **`shape = 16`:**  
+   Bentuk titik diubah menjadi lingkaran padat (shape 16 adalah lingkaran tanpa isian).  
+
+Kita mendapatkan plot titik dengan semua titik berwarna biru, ukuran yang sedikit lebih besar, dan bentuk lingkaran padat. Ini adalah contoh sederhana untuk membuat grafik yang bersih dan mudah dibaca.  
+### Plot Titik dengan Warna, Isi, Bentuk, dan Transparansi yang Unik
+
+```{r}
+ggplot(data = lizards, aes(x = total_length, y = weight)) +
+  geom_point(color = "cyan4", 
+             fill = "yellow",
+             shape = 22, 
+             size = 3, 
+             alpha = 0.4)
+```
+
+1. **`color = "cyan4"`:**  
+   Garis batas titik diwarnai dengan warna cyan gelap.  
+2. **`fill = "yellow"`:**  
+   Isi titik diwarnai kuning.  
+3. **`shape = 22`:**  
+   Bentuk titik diubah menjadi kotak dengan isian (shape 22 adalah kotak yang bisa diisi warna).  
+4. **`size = 3`:**  
+   Ukuran titik diperbesar menjadi 3.  
+5. **`alpha = 0.4`:**  
+   Transparansi titik diatur menjadi 0.4 (40% opak), sehingga titik-titik terlihat transparan.  
+
+Kita mendapatkan plot titik dengan titik-titik berbentuk kotak, garis batas cyan gelap, isi kuning, dan transparan. Ini adalah contoh kreatif untuk membuat grafik yang menarik secara visual, meskipun mungkin tidak cocok untuk semua situasi.  
+
+## Mengupdate Estetika Berdasarkan Variabel
+
+Salah satu fitur paling powerful dari ggplot2 adalah kemampuan untuk **memetakan variabel ke estetika grafik**. Ini berarti kita bisa menggunakan data kita sendiri untuk mengontrol warna, ukuran, bentuk, atau elemen visual lainnya. Misalnya, kita bisa membuat titik-titik pada grafik berwarna berbeda berdasarkan kategori, atau mengubah ukuran titik berdasarkan nilai numerik.  
+
+### Plot Titik dengan Warna dan Ukuran Berdasarkan Variabel  
+Berikut adalah contoh kode untuk membuat plot titik di mana warna dan ukuran titik ditentukan oleh variabel dalam data:  
+
+```{r}
+ggplot(data = lizards, aes(x = total_length, y = weight)) +
+  geom_point(aes(color = common_name, size = total_length))
+```
+
+1. **`aes(color = common_name)`:**  
+   - Warna titik ditentukan oleh variabel `common_name` (nama spesies kadal).  
+   - Setiap spesies akan memiliki warna yang berbeda.  
+
+2. **`aes(size = total_length)`:**  
+   - Ukuran titik ditentukan oleh variabel `total_length` (panjang total kadal).  
+   - Kadal dengan panjang total lebih besar akan ditampilkan sebagai titik yang lebih besar.  
+
+Kita mendapatkan plot titik yang:  
+- Menampilkan hubungan antara panjang total (`total_length`) dan berat (`weight`) kadal.  
+- Warna titik berbeda-beda berdasarkan spesies (`common_name`).  
+- Ukuran titik bervariasi berdasarkan panjang total (`total_length`).  
+
+## Menggunakan Kombinasi Estetika
+
+Salah satu keunggulan ggplot2 adalah kemampuannya untuk menggabungkan **estetika berbasis variabel** (menggunakan `aes()`) dan **estetika berbasis konstanta** (tanpa `aes()`). Ini memungkinkan kita membuat grafik yang lebih kaya dan informatif, sambil tetap menjaga tampilan yang konsisten.  
+
+### Warna Berdasarkan Variabel, Transparansi Tetap  
+Berikut adalah contoh kode di mana warna titik ditentukan oleh variabel (`common_name`), tetapi transparansi diatur secara konstan untuk semua titik:  
+
+```{r}
+ggplot(data = lizards, aes(x = total_length, y = weight)) +
+  geom_point(aes(color = common_name), alpha = 0.3)
+```
+
+1. **`aes(color = common_name)`:**  
+   - Warna titik ditentukan oleh variabel `common_name` (nama spesies kadal).  
+   - Setiap spesies akan memiliki warna yang berbeda.  
+
+2. **`alpha = 0.3`:**  
+   - Transparansi titik diatur secara konstan menjadi 0.3 (30% opak) untuk semua titik.  
+   - Ini membuat titik-titik terlihat transparan, sehingga tumpang tindih antar titik lebih mudah dilihat.  
+
+Kita mendapatkan plot titik yang:  
+- Menampilkan hubungan antara panjang total (`total_length`) dan berat (`weight`) kadal.  
+- Warna titik berbeda-beda berdasarkan spesies (`common_name`).  
+- Semua titik memiliki transparansi yang sama, sehingga grafik terlihat lebih rapi dan informatif.  
+

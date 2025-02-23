@@ -39,7 +39,7 @@ about:
 ::: {#edu-exp}
 :::
 
-Currently, I work as a lecturer and data scientist. As an educator, I have a passion for sharing knowledge and inspiring students in understanding the world of data and technology. On the other hand, as a data analyst, I am actively involved in various data analysis projects that aim to transform raw data into valuable insights that can be implemented in strategic decision making. I also enjoy watching movies. Have a look at my complete [_{{< iconify fa6-regular file-lines >}} curriculum vitae_](https://dedenistiawan.github.io/curriculum-vitae/).
+Currently, I work as a lecturer and data scientist. As an educator, I have a passion for sharing knowledge and inspiring students in understanding the world of data and technology. On the other hand, as a data analyst, I am actively involved in various data analysis projects that aim to transform raw data into valuable insights that can be implemented in strategic decision making. I also enjoy watching movies. Have a look at my complete [_{{< iconify fa6-regular file-lines >}} curriculum vitae_](https://deden-cv.netlify.app/).
 
 ![](https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg){fig-alt="Github Commit History"}
 
